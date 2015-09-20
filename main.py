@@ -1,4 +1,6 @@
 #!/bin/python
+from Population import GrowthPopulationBuilder
+
 __author__ = 'Waner Miranda'
 import numpy as np
 import sys
@@ -25,6 +27,9 @@ class MultiVariableRegression:
         if c == 3:
             self._dataset = self._dataset[:, 1:]
         print self._dataset
+
+        pop_builder = GrowthPopulationBuilder()
+        pop_builder.build_population()
 
 
 def usage():
