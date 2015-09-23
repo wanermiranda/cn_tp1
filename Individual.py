@@ -6,8 +6,8 @@ FULL = 0
 
 
 class Individual:
-    def __init__(self, non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7, non_terminals_chance=0.3, method=GROWTH):
-        self._tree = Tree(self)
+    def __init__(self, non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
+                 non_terminals_chance=0.3, method=GROWTH):
         self._method = method
         self._min_depth = min_depth
         self._max_depth = max_depth
@@ -15,21 +15,16 @@ class Individual:
         self._non_terminals_chance = non_terminals_chance
         self._non_terminals = non_terminals
         self._terminals = terminals
+        self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+                          self._terminals_chance, self._non_terminals_chance)
 
     def get_tree(self):
         return self._tree
 
-    def gen_node(self, parent):
-        module = globals()
-        operator = int(random.choice(range(self._non_terminals.__len__())))
-        operator_class = getattr(module, self._non_terminals[operator])
-        return operator_class(parent)
-
 
 class Tree:
-    def __init__(self, individual,  min_depth=2, max_depth=6,  terminals_chance=0.7, non_terminals_chance=0.3,
-                 method=GROWTH, children=[]):
-        self._root = None
+    def __init__(self, individual,  non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
+                 non_terminals_chance=0.3, method=GROWTH, children=[]):
         self._individual = individual
         self._children = children
         self._method = method
@@ -37,14 +32,38 @@ class Tree:
         self._max_depth = max_depth
         self._terminals_chance = terminals_chance
         self._non_terminals_chance = non_terminals_chance
-        self._height = 0
+        self._non_terminals = non_terminals
+        self._terminals = terminals
+        self._depth = 0
+        self._root = self.gen_node(self)
+
+    def gen_node(self, parent):
+        is_terminal = (random.random() * 100) <= self._terminals_chance
+        module = globals()
+        if not is_terminal:
+            non_terminal = int(random.choice(range(self._non_terminals.__len__())))
+            non_terminal_class = module[self._non_terminals[non_terminal]]
+            return non_terminal_class(parent)
+        else:
+            terminal = int(random.choice(range(self._terminals.__len__())))
+            terminal_class = module[self._terminals[terminal]]
+            return terminal_class(parent)
 
     def add_child(self, child):
         child.set_tree(self)
         self._children.append(child)
 
-    def add_height(self):
-        self._height += 1
+    def add_depth(self):
+        self._depth += 1
+
+    def get_depth(self):
+        return self._depth
+
+    def get_max_depth(self):
+        return self._max_depth
+
+    def get_tree(self):
+        return self
 
 
 class Node:
@@ -60,6 +79,9 @@ class Node:
     def add_child(self, child):
         self._children.append(child)
 
+    def get_tree(self):
+        return self._tree
+
 
 class NonTerminal(Node):
     def __init__(self, parent, children=[]):
@@ -67,7 +89,7 @@ class NonTerminal(Node):
         self._children = children
         self._symbol = ''
         self.value = 0.0
-        self._tree.add_height()
+        self._tree.add_depth()
 
     def __str__(self):
         representation = '(' + self._symbol + ' '

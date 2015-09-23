@@ -18,10 +18,6 @@ class GrowthPopulationBuilder:
 
     def build_population(self):
         for pop in range(self._pop_size):
-            individual = ind.Individual()
-
-            # print ind.FloatTerminal(individual.get_tree())
-            # print self.get_operator(individual.get_tree())
-            # print self._population.__len__()
-
+            individual = ind.Individual(self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+                                        self._terminals_chance, self._non_terminals_chance)
             self._population.append(individual)
