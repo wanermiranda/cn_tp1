@@ -20,8 +20,15 @@ class Individual:
         self._value = 0.0
         self._fitness = 0.0
         self._data_row = []
+        self._id = str(uuid.uuid1())
         self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                           self._terminals_chance, self._non_terminals_chance)
+
+    def get_id(self):
+        return self._id
+
+    def equals(self, target):
+        return self._id == target.get_id()
 
     def set_fitness(self, value):
         self._fitness = value
@@ -49,6 +56,15 @@ class Individual:
     def mutate(self):
         self._tree.mutate()
 
+    def cross_over(self, target_node, new_node):
+        self._tree.cross_over(target_node, new_node)
+
+    def select_node(self):
+        result = self._tree.select_node()
+        if result is None:
+            result = self.select_node()
+        return result
+
 
 class Tree:
     def __init__(self, individual,  non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
@@ -73,7 +89,13 @@ class Tree:
         while self._depth < min_depth:
             print 'Deeper', self._depth
             self._root = self.gen_node(self)
+            print 'Try deepening ', self._depth
 
+    def get_id(self):
+        return self._id
+
+    def equals(self, target):
+        return self._id == target.get_id()
 
     def gen_node_(self, parent, children, mutating):
         chance = random.random()
@@ -128,7 +150,7 @@ class Tree:
 
     def get_mutate_chance(self):
         if self._mutation_nodes_reviewed > self._nodes:
-            self._mutate_chance = 0
+            self._mutate_chance = 1
         else:
             self._mutate_chance = float(self._mutation_nodes_reviewed)/float(self._nodes)
         self._mutation_nodes_reviewed += 1
@@ -151,6 +173,26 @@ class Tree:
             print self
             self.mutate()
 
+        while self._depth < self._min_depth:
+            print 'Deeper Mutation', self._depth
+            self.mutate()
+
+    def cross_over(self, target_node, new_node):
+        if self._root.equals(target_node):
+            self._root = new_node
+        else:
+            self._root.cross_over(target_node, new_node)
+
+    def select_node(self):
+        self._mutation_nodes_reviewed = 0
+        chance = self.get_mutate_chance()
+        mutating = random.random() <= chance
+        if mutating:
+            print 'Choose ',  self._root
+            return self._root
+        else:
+            return self._root.select_node()
+
 
 class Node:
     def __init__(self, parent, children=[]):
@@ -160,7 +202,14 @@ class Node:
         self._depth = 0
         self._id = str(uuid.uuid1())
 
+    def get_id(self):
+        return self._id
+
+    def equals(self, target):
+        return self._id == target.get_id()
+
     def mutate(self):
+        mutated = False
         for pos in range(self._children.__len__()):
             chance = self._tree.get_mutate_chance()
             mutating = random.random() <= chance
@@ -170,6 +219,41 @@ class Node:
                 print 'Choose ',  changing_node
                 print 'Changed', node
                 self._children[pos] = node
+                mutated = True
+                return mutated
+
+        if not mutated:
+            for pos in range(self._children.__len__()):
+                mutated = self._children[pos].mutate()
+                if mutated:
+                    break
+        return mutated
+
+    def cross_over(self, target_node, new_node):
+        for pos in range(self._children.__len__()):
+            if self._children[pos].equals(target_node):
+                self._children[pos] = new_node
+                return True
+
+        for pos in range(self._children.__len__()):
+            if self._children[pos].cross_over(target_node, new_node):
+                return True
+
+        return False
+
+    def select_node(self):
+        for pos in range(self._children.__len__()):
+            chance = self._tree.get_mutate_chance()
+            selected = random.random() <= chance
+            if selected:
+                return self._children[pos]
+
+        for pos in range(self._children.__len__()):
+            node = self._children[pos].select_node()
+            if node is not None:
+                return node
+
+        return None
 
     def set_tree(self, tree):
         self._tree = tree
