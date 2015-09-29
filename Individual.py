@@ -49,6 +49,13 @@ class Individual:
     def mutate(self):
         self._tree.mutate()
 
+    def cross_over(self, individual):
+        selected_branch = individual.select_branch()
+        self._tree.cross_over(selected_branch)
+
+    def select_branch(self):
+        return self._tree.select_branch()
+
 
 class Tree:
     def __init__(self, individual,  non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
@@ -73,7 +80,7 @@ class Tree:
         while self._depth < min_depth:
             print 'Deeper', self._depth
             self._root = self.gen_node(self)
-
+            print 'Try deepening ', self._depth
 
     def gen_node_(self, parent, children, mutating):
         chance = random.random()
@@ -128,7 +135,7 @@ class Tree:
 
     def get_mutate_chance(self):
         if self._mutation_nodes_reviewed > self._nodes:
-            self._mutate_chance = 0
+            self._mutate_chance = 1
         else:
             self._mutate_chance = float(self._mutation_nodes_reviewed)/float(self._nodes)
         self._mutation_nodes_reviewed += 1
@@ -151,6 +158,41 @@ class Tree:
             print self
             self.mutate()
 
+        while self._depth < self._min_depth:
+            print 'Deeper Mutation', self._depth
+            self.mutate()
+
+    def cross_over(self, selected_branch):
+        self._mutation_nodes_reviewed = 0
+        chance = self.get_mutate_chance()
+        mutating = random.random() <= chance
+        representation = str(self)
+        if mutating:
+            print 'Choose ',  self._root
+            self._root = selected_branch
+            print 'Changed', self._root
+        else:
+            self._root.cross_over()
+        if representation == str(self):
+            print 'Not changing'
+            print representation
+            print self
+            self.cross_over(selected_branch)
+
+        while self._depth < self._min_depth:
+            print 'Deeper Mutation', self._depth
+            self.cross_over(selected_branch)
+
+    def select_branch(self):
+        self._mutation_nodes_reviewed = 0
+        chance = self.get_mutate_chance()
+        mutating = random.random() <= chance
+        if mutating:
+            print 'Choose ',  self._root
+            return self._root
+        else:
+            self._root.select_branch()
+
 
 class Node:
     def __init__(self, parent, children=[]):
@@ -161,12 +203,44 @@ class Node:
         self._id = str(uuid.uuid1())
 
     def mutate(self):
+        mutated = False
         for pos in range(self._children.__len__()):
             chance = self._tree.get_mutate_chance()
             mutating = random.random() <= chance
             if mutating:
                 changing_node = self._children[pos]
                 node = self._tree.gen_node_(self, changing_node.get_children(), True)
+                print 'Choose ',  changing_node
+                print 'Changed', node
+                self._children[pos] = node
+                mutated = True
+                return mutated
+
+        if not mutated:
+            for pos in range(self._children.__len__()):
+                mutated = self._children[pos].mutate()
+                if mutated:
+                    break
+        return mutated
+
+    def cross_over(self, selected_branch):
+        for pos in range(self._children.__len__()):
+            chance = self._tree.get_mutate_chance()
+            selected = random.random() <= chance
+            if selected:
+                changing_node = self._children[pos]
+                node = selected_branch
+                print 'Choose ',  changing_node
+                print 'Changed', node
+                self._children[pos] = node
+
+    def select_branch(self):
+        for pos in range(self._children.__len__()):
+            chance = self._tree.get_mutate_chance()
+            selected = random.random() <= chance
+            if selected:
+                return self._children[pos]
+                node = selected_branch
                 print 'Choose ',  changing_node
                 print 'Changed', node
                 self._children[pos] = node
