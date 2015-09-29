@@ -1,4 +1,6 @@
 import random
+import uuid
+
 __author__ = 'Waner Miranda'
 GROWTH = 0
 FULL = 0
@@ -63,15 +65,18 @@ class Tree:
         self._depth = 0
         self._nodes = 0
         self._value = 0.0
+        self._id = str(uuid.uuid1())
         self._mutate_chance = 0
-        self._nodes_to_mutate = 0
+        self._mutation_nodes_reviewed = 0
         self._root = self.gen_node(self)
 
-    def gen_node_(self, parent, children=[], mutating=False):
+    def gen_node_(self, parent, children, mutating):
         chance = random.random()
         is_terminal = chance <= self._terminals_chance
+        parent_depth = 0 if isinstance(parent, Tree) else parent.get_depth()
         module = globals()
-        if ((not is_terminal) or isinstance(parent, Tree)) and (self._depth <= self._max_depth - 1):
+
+        if ((not is_terminal) or isinstance(parent, Tree)) and (parent_depth <= self._max_depth - 1):
             non_terminal = int(random.choice(range(self._non_terminals.__len__())))
             non_terminal_class = module[self._non_terminals[non_terminal]]
             node = non_terminal_class(parent, children, mutating)
@@ -79,6 +84,8 @@ class Tree:
             terminal = int(random.choice(range(self._terminals.__len__())))
             terminal_class = module[self._terminals[terminal]]
             node = terminal_class(parent)
+
+        self._mutation_nodes_reviewed = self._nodes
         return node
 
     def gen_node(self, parent):
@@ -89,6 +96,10 @@ class Tree:
     def add_child(self, child):
         child.set_tree(self)
         self._children.append(child)
+
+    @staticmethod
+    def get_depth():
+        return 0
 
     def add_depth(self):
         self._depth += 1
@@ -108,16 +119,24 @@ class Tree:
         return self._value
 
     def get_mutate_chance(self):
-        self._nodes_to_mutate -= 1
-        self._mutate_chance = 1 - (self._nodes_to_mutate/self._nodes)
+        self._mutation_nodes_reviewed += 1
+
+        if self._mutation_nodes_reviewed > self._nodes:
+            self._mutate_chance = 0
+        else:
+            self._mutate_chance = float(self._mutation_nodes_reviewed)/float(self._nodes)
+
         return self._mutate_chance
 
     def mutate(self):
-        self._nodes_to_mutate = self._nodes
+        self._mutation_nodes_reviewed = 0
         chance = self.get_mutate_chance()
-        mutating = random.random() >= chance
+        mutating = random.random() <= chance
         if mutating:
-            self._root = self.gen_node_(self, self._children, True)
+            print 'mutated'
+            self._root = self.gen_node_(self, self._root.get_children(), True)
+        else:
+            self._root.mutate()
 
 
 class Node:
@@ -125,6 +144,19 @@ class Node:
         self._parent = parent
         self._tree = parent.get_tree()
         self._children = children
+        self._depth = 0
+        self._id = str(uuid.uuid1())
+
+    def mutate(self):
+        for pos in range(self._children.__len__()):
+            chance = self._tree.get_mutate_chance()
+            mutating = random.random() <= chance
+            if mutating:
+                # print 'mutated'
+                changing_node = self._children[pos]
+                node = self._tree.gen_node_(self, changing_node.get_children(), True)
+                # print 'Changed', node
+                self._children[pos] = node
 
     def set_tree(self, tree):
         self._tree = tree
@@ -135,25 +167,40 @@ class Node:
     def get_tree(self):
         return self._tree
 
-    def mutate(self):
-        print 'mutate', self._children.__len__()
+    def get_depth(self):
+        return self._depth
+
+    def get_children(self):
+        return self._children
 
 
 class NonTerminal(Node):
     def __init__(self, parent, children=[], mutating=False):
         Node.__init__(self, parent)
-        self._children = children
         self._symbol = ''
         self._value = 0.0
-        self._depth = self._tree.add_depth()
+        self._children = []
         if not mutating:
-            children.append(self._tree.gen_node(self))
-            children.append(self._tree.gen_node(self))
+            self._depth = self._tree.add_depth()
+            self._children.append(self._tree.gen_node(self))
+            self._children.append(self._tree.gen_node(self))
+        else:
+            if len(children) == 0:
+                self._children.append(self._tree.gen_node(self))
+                self._children.append(self._tree.gen_node(self))
+            else:
+                self._children = children
+            self._depth = parent.get_depth() + 1
+            if self._depth > self.get_tree()._depth:
+                self.get_tree().get_depth()
 
     def __str__(self):
         representation = '(' + self._symbol + ' '
         for child in self._children:
-            representation += child.__str__() + ' '
+            # try:
+                representation += child.__str__() + ' '
+            # except RuntimeError as re:
+            #     print re.args, re.message
         return representation + ')'
 
     def get_depth(self):
@@ -164,13 +211,16 @@ class Terminal(Node):
     def __init__(self, parent):
         Node.__init__(self, parent)
         self._value = 0.0
-        self._depth = parent.get_depth()
+        self._depth = parent.get_depth() + 1
 
     def eval(self):
         return self._value
 
     def add_child(self, child):
         raise Exception('Terminals could not have children')
+
+    def get_children(self):
+        return []
 
 
 class FloatTerminal(Terminal):

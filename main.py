@@ -36,7 +36,7 @@ class MultiVariableRegression:
 
         pop_builder = PopulationHandler()
         pop_builder.build_population()
-        pop_builder.eval(ft.QuadError(), self._dataset)
+        # pop_builder.eval(ft.QuadError(), self._dataset)
         pop_builder.produce_new_population(cross_over_chance, mutation_chance)
 
 

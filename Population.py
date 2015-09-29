@@ -37,9 +37,9 @@ class PopulationHandler:
         for pop in range(self._pop_size):
             individual = ind.Individual(self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                                         self._terminals_chance, self._non_terminals_chance, self._variables)
-            print "individual:", self._population.__len__()+1
-            print individual._tree._nodes
-            print individual._tree._depth
+            print 'ind:', self._population.__len__()+1
+            print individual
+            individual.mutate()
             print individual
             self._population.append(individual)
 
