@@ -70,6 +70,11 @@ class Tree:
         self._mutation_nodes_reviewed = 0
         self._root = self.gen_node(self)
 
+        while self._depth < min_depth:
+            print 'Deeper', self._depth
+            self._root = self.gen_node(self)
+
+
     def gen_node_(self, parent, children, mutating):
         chance = random.random()
         is_terminal = chance <= self._terminals_chance
@@ -100,6 +105,9 @@ class Tree:
     @staticmethod
     def get_depth():
         return 0
+
+    def get_real_depth(self):
+        return self._depth
 
     def add_depth(self):
         self._depth += 1
@@ -195,8 +203,10 @@ class NonTerminal(Node):
                 self._children.append(self._tree.gen_node(self))
             else:
                 self._children = children
+
             self._depth = parent.get_depth() + 1
-            if self._depth > self.get_tree()._depth:
+
+            if self._depth > self.get_tree().get_real_depth():
                 self.get_tree().get_depth()
 
     def __str__(self):
