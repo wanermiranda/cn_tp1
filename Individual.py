@@ -119,24 +119,29 @@ class Tree:
         return self._value
 
     def get_mutate_chance(self):
-        self._mutation_nodes_reviewed += 1
-
         if self._mutation_nodes_reviewed > self._nodes:
             self._mutate_chance = 0
         else:
             self._mutate_chance = float(self._mutation_nodes_reviewed)/float(self._nodes)
-
+        self._mutation_nodes_reviewed += 1
         return self._mutate_chance
 
     def mutate(self):
         self._mutation_nodes_reviewed = 0
         chance = self.get_mutate_chance()
         mutating = random.random() <= chance
+        representation = str(self)
         if mutating:
-            print 'mutated'
+            print 'Choose ',  self._root
             self._root = self.gen_node_(self, self._root.get_children(), True)
+            print 'Changed', self._root
         else:
             self._root.mutate()
+        if representation == str(self):
+            print 'Not changing'
+            print representation
+            print self
+            self.mutate()
 
 
 class Node:
@@ -152,10 +157,10 @@ class Node:
             chance = self._tree.get_mutate_chance()
             mutating = random.random() <= chance
             if mutating:
-                # print 'mutated'
                 changing_node = self._children[pos]
                 node = self._tree.gen_node_(self, changing_node.get_children(), True)
-                # print 'Changed', node
+                print 'Choose ',  changing_node
+                print 'Changed', node
                 self._children[pos] = node
 
     def set_tree(self, tree):
