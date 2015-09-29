@@ -67,14 +67,14 @@ class Tree:
         self._nodes_to_mutate = 0
         self._root = self.gen_node(self)
 
-    def gen_node_(self, parent, mutating=False):
+    def gen_node_(self, parent, children=[], mutating=False):
         chance = random.random()
         is_terminal = chance <= self._terminals_chance
         module = globals()
         if ((not is_terminal) or isinstance(parent, Tree)) and (self._depth <= self._max_depth - 1):
             non_terminal = int(random.choice(range(self._non_terminals.__len__())))
             non_terminal_class = module[self._non_terminals[non_terminal]]
-            node = non_terminal_class(parent, mutating=False)
+            node = non_terminal_class(parent, children, mutating)
         else:
             terminal = int(random.choice(range(self._terminals.__len__())))
             terminal_class = module[self._terminals[terminal]]
@@ -82,8 +82,7 @@ class Tree:
         return node
 
     def gen_node(self, parent):
-        node = self.gen_node_(parent)
-
+        node = self.gen_node_(parent, [], False)
         self._nodes += 1
         return node
 
@@ -118,7 +117,7 @@ class Tree:
         chance = self.get_mutate_chance()
         mutating = random.random() >= chance
         if mutating:
-            self._root = self.gen_node_(self, True)
+            self._root = self.gen_node_(self, self._children, True)
 
 
 class Node:
@@ -137,18 +136,19 @@ class Node:
         return self._tree
 
     def mutate(self):
-        print 'mutate'
+        print 'mutate', self._children.__len__()
 
 
 class NonTerminal(Node):
-    def __init__(self, parent, mutating=False, children=[]):
+    def __init__(self, parent, children=[], mutating=False):
         Node.__init__(self, parent)
         self._children = children
         self._symbol = ''
         self._value = 0.0
         self._depth = self._tree.add_depth()
-        children.append(self._tree.gen_node(self))
-        children.append(self._tree.gen_node(self))
+        if not mutating:
+            children.append(self._tree.gen_node(self))
+            children.append(self._tree.gen_node(self))
 
     def __str__(self):
         representation = '(' + self._symbol + ' '
@@ -202,8 +202,8 @@ class ArrayVariableTerminal(Terminal):
 
 
 class Add (NonTerminal):
-    def __init__(self, parent):
-        NonTerminal.__init__(self, parent, [])
+    def __init__(self, parent, children=[], mutating=False):
+        NonTerminal.__init__(self, parent, children, mutating)
         self._symbol = '+'
         self._value = 0.0
 
@@ -215,8 +215,8 @@ class Add (NonTerminal):
 
 
 class Multiply (NonTerminal):
-    def __init__(self, parent):
-        NonTerminal.__init__(self, parent, [])
+    def __init__(self, parent, children=[], mutating=False):
+        NonTerminal.__init__(self, parent, children, mutating)
         self._symbol = '*'
         self._value = 0.0
 
@@ -233,8 +233,8 @@ class Multiply (NonTerminal):
 
 
 class Subtract (NonTerminal):
-    def __init__(self, parent):
-        NonTerminal.__init__(self, parent, [])
+    def __init__(self, parent, children=[], mutating=False):
+        NonTerminal.__init__(self, parent, children, mutating)
         self._symbol = '-'
         self._value = 0.0
 
@@ -250,8 +250,8 @@ class Subtract (NonTerminal):
 
 
 class ProtectedDiv (NonTerminal):
-    def __init__(self, parent):
-        NonTerminal.__init__(self, parent, [])
+    def __init__(self, parent, children=[], mutating=False):
+        NonTerminal.__init__(self, parent, children, mutating)
         self._symbol = '%'
         self._value = 0.0
 
