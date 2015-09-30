@@ -9,14 +9,12 @@ import fitness as ft
 
 
 class MultiVariableRegression:
-    def __init__(self, dataset, config):
+    def __init__(self, dataset, population, generations, tournament_size, elitism):
         """
 
         :type dataset: unicode
         :type config: unicode
         """
-
-        self._config = config
         self._dataset = []
         cross_over_chance = 0.60
         mutation_chance = 0.39
@@ -34,37 +32,58 @@ class MultiVariableRegression:
             self._dataset = self._dataset[:, 1:]
         # print self._dataset
 
-        pop_builder = PopulationHandler()
+        print 'Build initial population'
+        pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
+                                        variables=['x', 'y'])
         pop_builder.build_population()
-        # pop_builder.eval(ft.QuadError(), self._dataset)
-        pop_builder.produce_new_population(cross_over_chance, mutation_chance)
+        pop_builder.eval(ft.ErrorAbs(), self._dataset)
+        for generation in range(generations):
+            print 'Evaluate Gen ', generation
+            pop_builder.do_evolution(cross_over_chance, mutation_chance)
+            pop_builder.eval(ft.ErrorAbs(), self._dataset)
+            pop_builder.select_fittest()
+        exit(0)
 
 
 def usage():
-    print 'example: main.py -d dataset.txt -c config.properties' \
-          '\n --dataset_file=dataset.txt --config=config.properties'
-    sys.exit(2)
+    print 'example: main.py -f dataset.txt -p 500 -g 500 -t 7 -e' \
+          '\n --dataset_file=dataset.txt --population=500 --generations=500  --tournament_size=7 --elitism'
 
 
 def main():
     dataset_file = ""
-    config = ""
+
     try:
         arg_list = sys.argv[1:]
-        opts, args = getopt.getopt(arg_list, 'd:c:h', ['dataset_file=', 'config=', 'help'])
+        opts, args = getopt.getopt(arg_list, 'f:p:g:t:eh', ['dataset_file=', 'population=',
+                                                            'generations=', 'tournament_size=', 'elitism', 'help'])
     except getopt.GetoptError:
         usage()
-
+        raise
+    population = 500
+    generations = 500
+    tournament_size = 7
+    elitism = False
     for opt, arg in opts:
         if opt == '-h':
             usage()
-        elif opt in ("-d", "--dataset_file"):
+        elif opt in ("-f", "--dataset_file"):
             dataset_file = arg
-            print arg
-        elif opt in ("-c", "--config="):
-            config = arg
-            print arg
-    MultiVariableRegression(dataset_file, config)
+            print 'dataset_file=', arg
+        elif opt in ("-p", "--population"):
+            population = int(arg)
+            print 'population=', arg
+        elif opt in ("-g", "--generations"):
+            generations = int(arg)
+            print 'generations=', arg
+        elif opt in ("-t", "--tournament_size"):
+            tournament_size = int(arg)
+            print 'tournament_size=', arg
+        elif opt in ("-e", "--elitism"):
+            elitism = True
+            print 'elitism=', elitism
+
+    MultiVariableRegression(dataset_file, population, generations, tournament_size, elitism)
 
 
 if __name__ == "__main__":

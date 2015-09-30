@@ -54,16 +54,23 @@ class Individual:
         return self._variables
 
     def mutate(self):
+        self._fitness = 0.0
         self._tree.mutate()
+        self._tree.update_depth()
 
     def cross_over(self, target_node, new_node):
+        self._fitness = 0.0
         self._tree.cross_over(target_node, new_node)
+        self._tree.update_depth()
 
     def select_node(self):
         result = self._tree.select_node()
         if result is None:
             result = self.select_node()
         return result
+
+    def get_tree_depth(self):
+        return self._tree.get_tree_depth()
 
 
 class Tree:
@@ -87,9 +94,9 @@ class Tree:
         self._root = self.gen_node(self)
 
         while self._depth < min_depth:
-            print 'Deeper', self._depth
+            # print 'Deeper', self._depth
             self._root = self.gen_node(self)
-            print 'Try deepening ', self._depth
+            # print 'Try deepening ', self._depth
 
     def get_id(self):
         return self._id
@@ -103,7 +110,7 @@ class Tree:
         parent_depth = 0 if isinstance(parent, Tree) else parent.get_depth()
         module = globals()
 
-        if ((not is_terminal) or isinstance(parent, Tree)) and (parent_depth <= self._max_depth - 1):
+        if ((not is_terminal) or isinstance(parent, Tree)) and (parent_depth < self._max_depth - 1):
             non_terminal = int(random.choice(range(self._non_terminals.__len__())))
             non_terminal_class = module[self._non_terminals[non_terminal]]
             node = non_terminal_class(parent, children, mutating)
@@ -115,10 +122,18 @@ class Tree:
         self._mutation_nodes_reviewed = self._nodes
         return node
 
+    def update_depth(self):
+        self._depth = 0
+        self._nodes = 0
+        self._root.update_depth()
+
     def gen_node(self, parent):
         node = self.gen_node_(parent, [], False)
-        self._nodes += 1
+        self.add_node()
         return node
+
+    def add_node(self):
+        self._nodes += 1
 
     def add_child(self, child):
         child.set_tree(self)
@@ -128,12 +143,11 @@ class Tree:
     def get_depth():
         return 0
 
-    def get_real_depth(self):
+    def get_tree_depth(self):
         return self._depth
 
-    def add_depth(self):
-        self._depth += 1
-        return self._depth
+    def check_tree_depth(self, depth):
+        self._depth = depth if depth > self._depth else self._depth
 
     def get_tree(self):
         return self
@@ -162,24 +176,25 @@ class Tree:
         mutating = random.random() <= chance
         representation = str(self)
         if mutating:
-            print 'Choose ',  self._root
+            # print 'Choose ',  self._root
             self._root = self.gen_node_(self, self._root.get_children(), True)
-            print 'Changed', self._root
+            # print 'Changed', self._root
         else:
             self._root.mutate()
         if representation == str(self):
-            print 'Not changing'
-            print representation
-            print self
+            # print 'Not changing'
+            # print representation
+            # print self
             self.mutate()
 
         while self._depth < self._min_depth:
-            print 'Deeper Mutation', self._depth
+            # print 'Deeper Mutation', self._depth
             self.mutate()
 
     def cross_over(self, target_node, new_node):
         if self._root.equals(target_node):
             self._root = new_node
+            self._root.update_parent(self)
         else:
             self._root.cross_over(target_node, new_node)
 
@@ -188,7 +203,7 @@ class Tree:
         chance = self.get_mutate_chance()
         mutating = random.random() <= chance
         if mutating:
-            print 'Choose ',  self._root
+            # print 'Choose ',  self._root
             return self._root
         else:
             return self._root.select_node()
@@ -201,6 +216,14 @@ class Node:
         self._children = children
         self._depth = 0
         self._id = str(uuid.uuid1())
+
+    def update_parent(self, parent):
+        self._parent = parent
+        self._tree = parent.get_tree()
+        self._depth = parent.get_depth() + 1
+
+        for child in self._children:
+            child.update_parent(self)
 
     def get_id(self):
         return self._id
@@ -216,8 +239,8 @@ class Node:
             if mutating:
                 changing_node = self._children[pos]
                 node = self._tree.gen_node_(self, changing_node.get_children(), True)
-                print 'Choose ',  changing_node
-                print 'Changed', node
+                # print 'Choose ',  changing_node
+                # print 'Changed', node
                 self._children[pos] = node
                 mutated = True
                 return mutated
@@ -233,6 +256,7 @@ class Node:
         for pos in range(self._children.__len__()):
             if self._children[pos].equals(target_node):
                 self._children[pos] = new_node
+                self._children[pos].update_parent(self)
                 return True
 
         for pos in range(self._children.__len__()):
@@ -278,29 +302,32 @@ class NonTerminal(Node):
         self._value = 0.0
         self._children = []
         if not mutating:
-            self._depth = self._tree.add_depth()
+            self._depth = parent.get_depth() + 1
             self._children.append(self._tree.gen_node(self))
             self._children.append(self._tree.gen_node(self))
         else:
             if len(children) == 0:
+                self._depth = parent.get_depth() + 1
                 self._children.append(self._tree.gen_node(self))
                 self._children.append(self._tree.gen_node(self))
             else:
                 self._children = children
 
-            self._depth = parent.get_depth() + 1
+        self.get_tree().check_tree_depth(self._depth)
 
-            if self._depth > self.get_tree().get_real_depth():
-                self.get_tree().get_depth()
+    def update_depth(self):
+        self._depth = self._parent.get_depth() + 1
+        self.get_tree().add_node()
+        self.get_tree().check_tree_depth(self._depth)
+        for child in self._children:
+            child.update_depth()
 
     def __str__(self):
-        representation = '(' + self._symbol + ' '
+        representation = '(' + ' '
         for child in self._children:
-            # try:
-                representation += child.__str__() + ' '
-            # except RuntimeError as re:
-            #     print re.args, re.message
-        return representation + ')'
+                representation += child.__str__() + ' ' + self._symbol + ' '
+        representation = representation.rstrip(self._symbol + ' ')
+        return representation + ' )'
 
     def get_depth(self):
         return self._depth
@@ -310,7 +337,7 @@ class Terminal(Node):
     def __init__(self, parent):
         Node.__init__(self, parent)
         self._value = 0.0
-        self._depth = parent.get_depth() + 1
+        self.update_depth()
 
     def eval(self):
         return self._value
@@ -320,6 +347,10 @@ class Terminal(Node):
 
     def get_children(self):
         return []
+
+    def update_depth(self):
+        self._depth = self._parent.get_depth() + 1
+        self.get_tree().check_tree_depth(self._depth)
 
 
 class FloatTerminal(Terminal):
@@ -339,14 +370,21 @@ class ArrayVariableTerminal(Terminal):
         Terminal.__init__(self, parent)
         self._individual = self.get_tree().get_individual()
         self._variables = self._individual.get_variables()
+        self._multiplier = random.randint(1, 10)
         self._index = int(random.choice(range(self._variables.__len__())))
 
+    def update_parent(self, parent):
+        Node.update_parent(self, parent)
+        self._individual = self.get_tree().get_individual()
+        self._variables = self._individual.get_variables()
+
     def __str__(self):
-        return self._variables[self._index]
+        return str(self._multiplier) + '(' + self._variables[self._index] + ')'
 
     def eval(self):
         data_row = self._individual.get_data_row()
-        self._value = data_row[self._index]
+        self._value = self._multiplier * data_row[self._index]
+
         return self._value
 
 
