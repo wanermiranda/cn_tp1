@@ -87,9 +87,9 @@ class Tree:
         self._root = self.gen_node(self)
 
         while self._depth < min_depth:
-            print 'Deeper', self._depth
+            # print 'Deeper', self._depth
             self._root = self.gen_node(self)
-            print 'Try deepening ', self._depth
+            # print 'Try deepening ', self._depth
 
     def get_id(self):
         return self._id
@@ -162,24 +162,25 @@ class Tree:
         mutating = random.random() <= chance
         representation = str(self)
         if mutating:
-            print 'Choose ',  self._root
+            # print 'Choose ',  self._root
             self._root = self.gen_node_(self, self._root.get_children(), True)
-            print 'Changed', self._root
+            # print 'Changed', self._root
         else:
             self._root.mutate()
         if representation == str(self):
-            print 'Not changing'
-            print representation
-            print self
+            # print 'Not changing'
+            # print representation
+            # print self
             self.mutate()
 
         while self._depth < self._min_depth:
-            print 'Deeper Mutation', self._depth
+            # print 'Deeper Mutation', self._depth
             self.mutate()
 
     def cross_over(self, target_node, new_node):
         if self._root.equals(target_node):
             self._root = new_node
+            self._root.update_parent(self)
         else:
             self._root.cross_over(target_node, new_node)
 
@@ -188,7 +189,7 @@ class Tree:
         chance = self.get_mutate_chance()
         mutating = random.random() <= chance
         if mutating:
-            print 'Choose ',  self._root
+            # print 'Choose ',  self._root
             return self._root
         else:
             return self._root.select_node()
@@ -201,6 +202,14 @@ class Node:
         self._children = children
         self._depth = 0
         self._id = str(uuid.uuid1())
+
+    def update_parent(self, parent):
+        self._parent = parent
+        self._tree = parent.get_tree()
+        self._depth = parent.get_depth() + 1
+
+        for child in self._children:
+            child.update_parent(self)
 
     def get_id(self):
         return self._id
@@ -216,8 +225,8 @@ class Node:
             if mutating:
                 changing_node = self._children[pos]
                 node = self._tree.gen_node_(self, changing_node.get_children(), True)
-                print 'Choose ',  changing_node
-                print 'Changed', node
+                # print 'Choose ',  changing_node
+                # print 'Changed', node
                 self._children[pos] = node
                 mutated = True
                 return mutated
@@ -233,6 +242,7 @@ class Node:
         for pos in range(self._children.__len__()):
             if self._children[pos].equals(target_node):
                 self._children[pos] = new_node
+                self._children[pos].update_parent(self)
                 return True
 
         for pos in range(self._children.__len__()):
@@ -341,12 +351,24 @@ class ArrayVariableTerminal(Terminal):
         self._variables = self._individual.get_variables()
         self._index = int(random.choice(range(self._variables.__len__())))
 
+    def update_parent(self, parent):
+        Node.update_parent(self, parent)
+        self._individual = self.get_tree().get_individual()
+        self._variables = self._individual.get_variables()
+
     def __str__(self):
         return self._variables[self._index]
 
     def eval(self):
         data_row = self._individual.get_data_row()
-        self._value = data_row[self._index]
+        if data_row is []:
+            print 'blah'
+        try:
+            self._value = data_row[self._index]
+        except:
+            print 'Error **************************************', self._individual
+            print self._individual.get_data_row()
+            exit(1)
         return self._value
 
 

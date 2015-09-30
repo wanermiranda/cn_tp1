@@ -11,14 +11,17 @@ class Fitness(object):
         for individual in population:
             individual_fitness = 0.0
             for data_row in data:
-                    target_value = data_row[len(data_row) - 1]
-                    generated_value = individual.eval(data_row)
-                    individual_fitness += self.function(generated_value, target_value)
+                    if len(data_row) > 0:
+                        # print 'data_row', data_row
+                        target_value = data_row[len(data_row) - 1]
+                        # print 'target', target_value
+                        generated_value = individual.eval(data_row)
+                        individual_fitness += self.function(generated_value, target_value)
 
             individual.set_fitness(individual_fitness)
 
         population.sort(key=lambda x: x.get_fitness())
-        for individual in population:
+        for individual in population[:1]:
             print individual, ' = ', individual.get_fitness()
 
         return population

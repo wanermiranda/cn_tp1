@@ -34,10 +34,15 @@ class MultiVariableRegression:
             self._dataset = self._dataset[:, 1:]
         # print self._dataset
 
+        print 'Build initial population'
         pop_builder = PopulationHandler()
         pop_builder.build_population()
-        # pop_builder.eval(ft.QuadError(), self._dataset)
-        pop_builder.produce_new_population(cross_over_chance, mutation_chance)
+        pop_builder.eval(ft.QuadError(), self._dataset)
+        for generation in range(1000):
+            print 'Evaluate Gen ', generation
+            pop_builder.do_evolution(cross_over_chance, mutation_chance)
+            pop_builder.eval(ft.QuadError(), self._dataset)
+            pop_builder.select_fittest()
 
 
 def usage():
