@@ -9,15 +9,13 @@ import fitness as ft
 
 
 class MultiVariableRegression:
-    def __init__(self, dataset, population, generations, tournament_size, elitism):
+    def __init__(self, dataset, population, generations, tournament_size, elitism, mutation_chance, cross_over_chance):
         """
 
         :type dataset: unicode
         :type config: unicode
         """
         self._dataset = []
-        cross_over_chance = 0.60
-        mutation_chance = 0.39
         for line in open(dataset):
             value_line = []
             for value in line.rstrip('\n\r').split():
@@ -31,23 +29,24 @@ class MultiVariableRegression:
         if c == 3:
             self._dataset = self._dataset[:, 1:]
         # print self._dataset
-
+        print '============================================================================'
         print 'Build initial population'
         pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
                                         variables=['x', 'y'])
         pop_builder.build_population()
         pop_builder.eval(ft.ErrorAbs(), self._dataset)
         for generation in range(generations):
+            print '============================================================================'
             print 'Evaluate Gen ', generation
             pop_builder.do_evolution(cross_over_chance, mutation_chance)
             pop_builder.eval(ft.ErrorAbs(), self._dataset)
-            pop_builder.select_fittest()
         exit(0)
 
 
 def usage():
-    print 'example: main.py -f dataset.txt -p 500 -g 500 -t 7 -e' \
-          '\n --dataset_file=dataset.txt --population=500 --generations=500  --tournament_size=7 --elitism'
+    print 'example: main.py -f dataset.txt -p 500 -g 500 -t 7 -m 0.39 -x 0.6 -e' \
+          '\n --dataset_file=dataset.txt --population=500 --generations=500  --tournament_size=7 ' \
+          ' --mutation=0.39 --cross_over=0.6 --elitism'
 
 
 def main():
@@ -55,13 +54,16 @@ def main():
 
     try:
         arg_list = sys.argv[1:]
-        opts, args = getopt.getopt(arg_list, 'f:p:g:t:eh', ['dataset_file=', 'population=',
-                                                            'generations=', 'tournament_size=', 'elitism', 'help'])
+        opts, args = getopt.getopt(arg_list, 'f:p:g:t:m:x:eh', ['dataset_file=', 'population=', 'mutation=',
+                                                                'cross_over=', 'generations=', 'tournament_size=',
+                                                                'elitism', 'help'])
     except getopt.GetoptError:
         usage()
         raise
     population = 500
     generations = 500
+    mutation = 0.39
+    cross_over = 0.6
     tournament_size = 7
     elitism = False
     for opt, arg in opts:
@@ -79,11 +81,17 @@ def main():
         elif opt in ("-t", "--tournament_size"):
             tournament_size = int(arg)
             print 'tournament_size=', arg
+        elif opt in ("-m", "--mutation"):
+            mutation = float(arg)
+            print 'mutation=', arg
+        elif opt in ("-x", "--cross_over"):
+            cross_over = float(arg)
+            print 'cross_over=', arg
         elif opt in ("-e", "--elitism"):
             elitism = True
             print 'elitism=', elitism
 
-    MultiVariableRegression(dataset_file, population, generations, tournament_size, elitism)
+    MultiVariableRegression(dataset_file, population, generations, tournament_size, elitism, mutation, cross_over)
 
 
 if __name__ == "__main__":
