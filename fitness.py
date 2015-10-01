@@ -23,9 +23,9 @@ class Fitness(object):
         avg_fitness = 0
 
         duplicated = 0
-        for ind1 in population:
+        for idx, ind1 in enumerate(population):
             avg_fitness += ind1.get_fitness()
-            for ind2 in population:
+            for ind2 in population[idx:]:
                 if not ind1.equals(ind2) and str(ind1) == str(ind2):
                     duplicated += 1
 
