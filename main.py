@@ -62,8 +62,8 @@ def main():
         raise
     population = 500
     generations = 500
-    mutation = 0.39
-    cross_over = 0.6
+    mutation = 0.05
+    cross_over = 0.9
     tournament_size = 7
     elitism = False
     for opt, arg in opts:

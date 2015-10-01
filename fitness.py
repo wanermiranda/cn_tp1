@@ -1,4 +1,5 @@
 import math
+import collections
 
 __author__ = 'gorigan'
 
@@ -23,13 +24,16 @@ class Fitness(object):
         avg_fitness = 0
 
         duplicated = 0
-        for idx, ind1 in enumerate(population):
-            avg_fitness += ind1.get_fitness()
-            for ind2 in population[idx:]:
-                if not ind1.equals(ind2) and str(ind1) == str(ind2):
-                    duplicated += 1
-
+        representations = []
+        for idx, individual in enumerate(population):
+            representations.append(str(individual))
+            avg_fitness += individual.get_fitness()
         avg_fitness /= pop_size
+
+        counter = collections.Counter(representations)
+        for val in counter.values():
+            val -= 1
+            duplicated += val
         return population, avg_fitness, duplicated
 
 

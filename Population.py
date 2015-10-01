@@ -26,8 +26,8 @@ class PopulationHandler:
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
                  tournament_size=5, elitism=False,
-                 non_terminals=['Add', 'Subtract', 'ProtectedDiv', 'Multiply'],
-                 terminals=['ArrayVariableTerminal'], variables=['x']):
+                 non_terminals=['Add', 'Subtract', 'Multiply'],
+                 terminals=['IntTerminal', 'ArrayVariableTerminal'], variables=['x', 'y']):
         self._min_depth = min_depth
         self._max_depth = max_depth
         self._pop_size = pop_size
@@ -94,20 +94,13 @@ class PopulationHandler:
                 son_2 = copy.deepcopy(individual_2)
                 selected_node1 = copy.deepcopy(son_1.select_node())
                 selected_node2 = copy.deepcopy(son_2.select_node())
-                son_1.cross_over(selected_node1, selected_node2)
-                son_2.cross_over(selected_node2, selected_node1)
-                if son_1.get_tree_depth() > self._max_depth:
-                    crossed_overs.append(individual_1)
-                else:
+                res_1 = son_1.cross_over(selected_node1, selected_node2)
+                res_2 = son_2.cross_over(selected_node2, selected_node1)
+                if not (son_1.get_tree_depth() > self._max_depth or not res_1):
                     crossed_overs.append(son_1)
 
-                if son_2.get_tree_depth() > self._max_depth:
-                    crossed_overs.append(individual_2)
-                else:
+                if not (son_2.get_tree_depth() > self._max_depth or not res_2):
                     crossed_overs.append(son_2)
-
-            else:
-                crossed_overs.append(individual_1)
 
         self._population = selected_reproductions + selected_mutations + selected_cross_overs + crossed_overs
         if self._elitism:

@@ -20,10 +20,14 @@ class Individual:
         self._value = 0.0
         self._fitness = 0.0
         self._data_row = []
+        self.using_vars = 0
         self._id = None
         self.renew_id()
         self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                           self._terminals_chance, self._non_terminals_chance)
+        while not self.check_all_vars():
+            self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+                              self._terminals_chance, self._non_terminals_chance)
 
     def renew_id(self):
         self._id = str(uuid.uuid1())
@@ -58,16 +62,18 @@ class Individual:
         return self._variables
 
     def mutate(self):
-        self._fitness = 0.0
-        self.renew_id()
-        self._tree.mutate()
-        self._tree.update_depth()
+        while not self.check_all_vars():
+            self._fitness = 0.0
+            self.renew_id()
+            self._tree.mutate()
+            self._tree.update_depth()
 
     def cross_over(self, target_node, new_node):
         self._fitness = 0.0
         self.renew_id()
         self._tree.cross_over(target_node, new_node)
         self._tree.update_depth()
+        return self.check_all_vars()
 
     def select_node(self):
         result = self._tree.select_node()
@@ -81,6 +87,13 @@ class Individual:
     def print_stats(self):
         print 'Ind:', self
         print 'Fitness =', self.get_fitness()
+
+    def check_all_vars(self):
+        result = True
+        representation = str(self)
+        for var in self._variables:
+            result = result and (var in representation)
+        return result
 
 
 class Tree:
@@ -176,7 +189,8 @@ class Tree:
         if self._mutation_nodes_reviewed > self._nodes:
             self._mutate_chance = 1
         else:
-            self._mutate_chance = float(self._mutation_nodes_reviewed)/float(self._nodes)
+            # float(self._mutation_nodes_reviewed)
+            self._mutate_chance = 1.0/float(self._nodes)
         self._mutation_nodes_reviewed += 1
         return self._mutate_chance
 
@@ -375,11 +389,24 @@ class FloatTerminal(Terminal):
         return self._value
 
 
+class IntTerminal(Terminal):
+    def __init__(self, parent):
+        Terminal.__init__(self, parent)
+        self._value = float(random.randint(1, 100))
+
+    def __str__(self):
+        return str(self._value)
+
+    def eval(self):
+        return self._value
+
+
 class ArrayVariableTerminal(Terminal):
     def __init__(self, parent):
         Terminal.__init__(self, parent)
-        self._individual = self.get_tree().get_individual()
-        self._variables = self._individual.get_variables()
+        self._individual = None
+        self._variables = ''
+        self.update_parent(parent)
         self._multiplier = random.randint(1, 10)
         self._index = int(random.choice(range(self._variables.__len__())))
 
@@ -389,7 +416,7 @@ class ArrayVariableTerminal(Terminal):
         self._variables = self._individual.get_variables()
 
     def __str__(self):
-        return str(self._multiplier) + '(' + self._variables[self._index] + ')'
+        return str(self._multiplier) + self._variables[self._index]
 
     def eval(self):
         data_row = self._individual.get_data_row()
