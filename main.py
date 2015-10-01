@@ -28,7 +28,6 @@ class MultiVariableRegression:
         r, c = self._dataset.shape[:2]
         if c == 3:
             self._dataset = self._dataset[:, 1:]
-        # print self._dataset
         print '============================================================================'
         print 'Build initial population'
         pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
@@ -37,7 +36,7 @@ class MultiVariableRegression:
         pop_builder.eval()
         for generation in range(generations):
             print '============================================================================'
-            print 'Evaluate Gen ', generation
+            print 'Evaluate Gen ', generation+1
             new_pop, better_than_dads = pop_builder.do_evolution(cross_over_chance, mutation_chance)
 
             print 'New Population', new_pop

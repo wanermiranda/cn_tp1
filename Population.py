@@ -83,6 +83,7 @@ class PopulationHandler:
         # print 'Starting mutation pipeline. '
         for individual in selected_mutations:
             individual.mutate()
+            self._fitness.eval_individual(self._dataset, individual)
 
         # print 'Starting cross over pipeline. '
         group_1 = selected_cross_overs[:len(selected_cross_overs)/2]
@@ -94,12 +95,16 @@ class PopulationHandler:
             individual_1 = group_1[position]
             individual_2 = group_2[position]
             if not individual_1.equals(individual_2):
+
                 son_1 = copy.deepcopy(individual_1)
                 son_2 = copy.deepcopy(individual_2)
+
                 selected_node1 = copy.deepcopy(son_1.select_node())
                 selected_node2 = copy.deepcopy(son_2.select_node())
+
                 res_1 = son_1.cross_over(selected_node1, selected_node2)
                 res_2 = son_2.cross_over(selected_node2, selected_node1)
+
                 if not (son_1.get_tree_depth() > self._max_depth or not res_1):
                     self._fitness.eval_individual(self._dataset, son_1)
                     crossed_overs.append(son_1)
@@ -113,6 +118,7 @@ class PopulationHandler:
                         better_than_dads += 1
 
         self._population = selected_reproductions + selected_mutations + selected_cross_overs + crossed_overs
+
         if self._elitism:
             self._population = [elite_individual] + self._population
 

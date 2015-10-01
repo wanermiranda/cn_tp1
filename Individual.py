@@ -25,9 +25,13 @@ class Individual:
         self.renew_id()
         self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                           self._terminals_chance, self._non_terminals_chance)
+        self._representation = None
+        self._representation = self.gen_representation()
         while not self.check_all_vars():
             self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                               self._terminals_chance, self._non_terminals_chance)
+            self._representation = None
+            self._representation = self.gen_representation()
 
     def renew_id(self):
         self._id = str(uuid.uuid1())
@@ -48,6 +52,11 @@ class Individual:
         return self._tree
 
     def __str__(self):
+        if self._representation is None:
+            self._representation = self.gen_representation()
+        return self._representation
+
+    def gen_representation(self):
         return self._tree.__str__()
 
     def eval(self, data_row=[]):
@@ -65,12 +74,14 @@ class Individual:
         while not self.check_all_vars():
             self._fitness = 0.0
             self.renew_id()
+            self._representation = None
             self._tree.mutate()
             self._tree.update_depth()
 
     def cross_over(self, target_node, new_node):
         self._fitness = 0.0
         self.renew_id()
+        self._representation = None
         self._tree.cross_over(target_node, new_node)
         self._tree.update_depth()
         return self.check_all_vars()
