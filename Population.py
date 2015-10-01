@@ -50,7 +50,12 @@ class PopulationHandler:
             self._population.append(individual)
 
     def eval(self, fitness, data):
-        self._population = fitness.eval(self._population, data)
+        self._population, avg_fitness = fitness.eval(self._population, data, self._pop_size)
+        print 'Best',
+        self._population[0].print_stats()
+        print 'Worst',
+        self._population[self._pop_size-1].print_stats()
+        print 'Avg Fitness =', avg_fitness
 
     def do_evolution(self, cross_over_chance, mutation_chance):
         if (cross_over_chance + mutation_chance) > 1:
@@ -107,11 +112,6 @@ class PopulationHandler:
         if self._elitism:
             self._population = [elite_individual] + self._population
         print "Population size: ", len(self._population)
-
-    def select_fittest(self):
-        # print 'Select the fittest'
-        self._population = self._population[0:self._pop_size]
-        # print "Population size: ", len(self._population)
 
 
 

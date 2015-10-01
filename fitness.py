@@ -7,26 +7,24 @@ class Fitness(object):
     def fitness_function(self):
         raise NotImplementedError('subclasses must override fitness_function()!')
 
-    def eval(self, population, data):
+    def eval(self, population, data, pop_size):
         for individual in population:
             if individual.get_fitness() == 0.0:
                 individual_fitness = 0.0
                 for data_row in data:
                         if len(data_row) > 0:
-                            # print 'data_row', data_row
-                            # target_value = data_row[len(data_row) - 1]
-                            # print 'target', target_value
                             generated_value = individual.eval(data_row)
                             individual_fitness += self.fitness_function(generated_value, 0)
 
                 individual.set_fitness(individual_fitness)
 
         population.sort(key=lambda x: x.get_fitness())
-        for individual in population[:1]:
-            print 'Best ind:', individual
-            print 'Fitness =', individual.get_fitness()
-
-        return population
+        population = population[0:pop_size]
+        avg_fitness = 0
+        for ind in population:
+            avg_fitness += ind.get_fitness()
+        avg_fitness /= pop_size
+        return population, avg_fitness
 
 
 class ErrorAbs(Fitness):

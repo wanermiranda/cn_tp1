@@ -20,9 +20,13 @@ class Individual:
         self._value = 0.0
         self._fitness = 0.0
         self._data_row = []
-        self._id = str(uuid.uuid1())
+        self._id = None
+        self.renew_id()
         self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                           self._terminals_chance, self._non_terminals_chance)
+
+    def renew_id(self):
+        self._id = str(uuid.uuid1())
 
     def get_id(self):
         return self._id
@@ -55,11 +59,13 @@ class Individual:
 
     def mutate(self):
         self._fitness = 0.0
+        self.renew_id()
         self._tree.mutate()
         self._tree.update_depth()
 
     def cross_over(self, target_node, new_node):
         self._fitness = 0.0
+        self.renew_id()
         self._tree.cross_over(target_node, new_node)
         self._tree.update_depth()
 
@@ -71,6 +77,10 @@ class Individual:
 
     def get_tree_depth(self):
         return self._tree.get_tree_depth()
+
+    def print_stats(self):
+        print 'Ind:', self
+        print 'Fitness =', self.get_fitness()
 
 
 class Tree:
