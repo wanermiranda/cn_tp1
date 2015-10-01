@@ -32,14 +32,18 @@ class MultiVariableRegression:
         print '============================================================================'
         print 'Build initial population'
         pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
-                                        variables=['x', 'y'])
+                                        dataset=self._dataset, variables=['x', 'y'], fitness=ft.ErrorAbs())
         pop_builder.build_population()
-        pop_builder.eval(ft.ErrorAbs(), self._dataset)
+        pop_builder.eval()
         for generation in range(generations):
             print '============================================================================'
             print 'Evaluate Gen ', generation
-            pop_builder.do_evolution(cross_over_chance, mutation_chance)
-            pop_builder.eval(ft.ErrorAbs(), self._dataset)
+            new_pop, better_than_dads = pop_builder.do_evolution(cross_over_chance, mutation_chance)
+
+            print 'New Population', new_pop
+            print 'Better than Dads', better_than_dads
+
+            pop_builder.eval()
         exit(0)
 
 

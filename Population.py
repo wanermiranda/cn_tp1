@@ -25,7 +25,7 @@ class PopulationHandler:
         return internal_list
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
-                 tournament_size=5, elitism=False,
+                 tournament_size=5, elitism=False, fitness=None, dataset=None,
                  non_terminals=['Add', 'Subtract', 'Multiply'],
                  terminals=['IntTerminal', 'ArrayVariableTerminal'], variables=['x', 'y']):
         self._min_depth = min_depth
@@ -39,6 +39,8 @@ class PopulationHandler:
         self._population = []
         self._tournament_size = tournament_size
         self._elitism = elitism
+        self._fitness = fitness
+        self._dataset = dataset
 
     def build_population(self):
         for pop in range(self._pop_size):
@@ -49,8 +51,8 @@ class PopulationHandler:
             # print 'Depth', individual.get_tree().get_tree_depth(), individual._max_depth
             self._population.append(individual)
 
-    def eval(self, fitness, data):
-        self._population, avg_fitness, duplicated = fitness.eval(self._population, data, self._pop_size)
+    def eval(self):
+        self._population, avg_fitness, duplicated = self._fitness.eval(self._population, self._dataset, self._pop_size)
         print 'Best',
         self._population[0].print_stats()
         print 'Worst',
@@ -62,6 +64,7 @@ class PopulationHandler:
         if (cross_over_chance + mutation_chance) > 1:
             raise ValueError('The sum of the chances must be equals to 1 or less.')
         selected_individuals = self._population
+        elite_individual = None
         if self._elitism:
             elite_individual = self._population[0]
             self._population.remove(elite_individual)
@@ -86,6 +89,7 @@ class PopulationHandler:
         group_2 = selected_cross_overs[len(selected_cross_overs)/2:]
         how_much = len(group_1) if len(group_1) < len(group_2) else len(group_2)
         crossed_overs = []
+        better_than_dads = 0
         for position in range(how_much):
             individual_1 = group_1[position]
             individual_2 = group_2[position]
@@ -97,15 +101,21 @@ class PopulationHandler:
                 res_1 = son_1.cross_over(selected_node1, selected_node2)
                 res_2 = son_2.cross_over(selected_node2, selected_node1)
                 if not (son_1.get_tree_depth() > self._max_depth or not res_1):
+                    self._fitness.eval_individual(self._dataset, son_1)
                     crossed_overs.append(son_1)
+                    if son_1.get_fitness() > individual_1.get_fitness():
+                        better_than_dads += 1
 
                 if not (son_2.get_tree_depth() > self._max_depth or not res_2):
+                    self._fitness.eval_individual(self._dataset, son_2)
                     crossed_overs.append(son_2)
+                    if son_2.get_fitness() > individual_2.get_fitness():
+                        better_than_dads += 1
 
         self._population = selected_reproductions + selected_mutations + selected_cross_overs + crossed_overs
         if self._elitism:
             self._population = [elite_individual] + self._population
-        print "Population size: ", len(self._population)
 
+        return len(self._population), better_than_dads
 
 

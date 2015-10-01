@@ -10,14 +10,7 @@ class Fitness(object):
 
     def eval(self, population, data, pop_size):
         for individual in population:
-            if individual.get_fitness() == 0.0:
-                individual_fitness = 0.0
-                for data_row in data:
-                        if len(data_row) > 0:
-                            generated_value = individual.eval(data_row)
-                            individual_fitness += self.fitness_function(generated_value, 0)
-
-                individual.set_fitness(individual_fitness)
+            self.eval_individual(data, individual)
 
         population.sort(key=lambda x: x.get_fitness())
         population = population[0:pop_size]
@@ -35,6 +28,16 @@ class Fitness(object):
             val -= 1
             duplicated += val
         return population, avg_fitness, duplicated
+
+    def eval_individual(self, data, individual):
+        if individual.get_fitness() == 0.0:
+            individual_fitness = 0.0
+            for data_row in data:
+                if len(data_row) > 0:
+                    generated_value = individual.eval(data_row)
+                    individual_fitness += self.fitness_function(generated_value, 0)
+
+            individual.set_fitness(individual_fitness)
 
 
 class ErrorAbs(Fitness):
