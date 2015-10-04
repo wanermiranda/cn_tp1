@@ -1,5 +1,6 @@
 import random
 import uuid
+import math
 
 __author__ = 'Waner Miranda'
 GROWTH = 0
@@ -8,7 +9,7 @@ FULL = 0
 
 class Individual:
     def __init__(self, non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
-                 non_terminals_chance=0.3, variables=[], method=GROWTH):
+                 non_terminals_chance=0.3, variables=[], method=GROWTH, unity=False):
         self._method = method
         self._min_depth = min_depth
         self._max_depth = max_depth
@@ -23,8 +24,12 @@ class Individual:
         self.using_vars = 0
         self._id = None
         self.renew_id()
-        self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
-                          self._terminals_chance, self._non_terminals_chance)
+        if not unity:
+            self._tree = Tree(self, self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+                              self._terminals_chance, self._non_terminals_chance)
+        else:
+            self._tree = Tree.create_unity(self ,self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+                                          self._terminals_chance, self._non_terminals_chance)
         self._representation = None
         self._representation = self.gen_representation()
         while not self.check_all_vars():
@@ -71,7 +76,8 @@ class Individual:
         return self._variables
 
     def mutate(self):
-        while not self.check_all_vars():
+        representation = str(self)
+        while not self.check_all_vars() or str(self) == representation:
             self._fitness = 0.0
             self.renew_id()
             self._representation = None
@@ -109,7 +115,7 @@ class Individual:
 
 class Tree:
     def __init__(self, individual,  non_terminals=[], terminals=[], min_depth=2, max_depth=6,  terminals_chance=0.7,
-                 non_terminals_chance=0.3, method=GROWTH, children=[]):
+                 non_terminals_chance=0.3, method=GROWTH, children=[], unity=False):
         self._individual = individual
         self._children = children
         self._method = method
@@ -125,15 +131,16 @@ class Tree:
         self._id = str(uuid.uuid1())
         self._mutate_chance = 0
         self._mutation_nodes_reviewed = 0
-        self._root = self.gen_node(self)
-
-        while self._depth < min_depth:
-            # print 'Deeper', self._depth
+        if not unity:
             self._root = self.gen_node(self)
-            # print 'Try deepening ', self._depth
+
+            while self._depth < min_depth:
+                # print 'Deeper', self._depth
+                self._root = self.gen_node(self)
+                # print 'Try deepening ', self._depth
 
     def get_id(self):
-        return self._id
+        self._id = str(uuid.uuid1())
 
     def equals(self, target):
         return self._id == target.get_id()
@@ -236,6 +243,24 @@ class Tree:
         else:
             return self._root.select_node()
 
+    @staticmethod
+    def create_unity(parent, _non_terminals, _terminals, _min_depth, _max_depth, _terminals_chance, _non_terminals_chance):
+        tree = Tree(individual=parent, terminals=_terminals, non_terminals=_non_terminals, min_depth=_min_depth, max_depth=_max_depth,
+                    terminals_chance=_terminals_chance, non_terminals_chance=_non_terminals_chance, unity=True)
+        tree._root = Add(parent=tree, children=[], mutating=True, gen=True)
+        tree._root._depth = tree.get_depth() + 1
+        tree._root._children.append(Multiply(parent=tree._root, children=[], mutating=True, gen=True))
+        tree._root._depth = tree.get_depth() + 1
+        tree._root._children[0]._children.append(ArrayVariableFloatTerminal(tree._root._children[0], 1.0, 0))
+        tree._root._children[0]._children.append(ArrayVariableFloatTerminal(tree._root._children[0], 1.0, 0))
+        tree._root._depth = tree.get_depth() + 1
+        tree._root._children.append(Multiply(parent=tree._root, children=[], mutating=True, gen=True))
+        tree._root._depth = tree.get_depth() + 1
+        tree._root._children[1]._children.append(ArrayVariableFloatTerminal(tree._root._children[1], 1.0, 1))
+        tree._root._children[1]._children.append(ArrayVariableFloatTerminal(tree._root._children[1], 1.0, 1))
+        tree._root._depth = tree.get_depth() + 1
+        return tree
+
 
 class Node:
     def __init__(self, parent, children=[]):
@@ -316,22 +341,27 @@ class Node:
 
 
 class NonTerminal(Node):
-    def __init__(self, parent, children=[], mutating=False):
+    def __init__(self, parent, children=[], mutating=False, gen=False, single=False):
         Node.__init__(self, parent)
         self._symbol = ''
         self._value = 0.0
         self._children = []
-        if not mutating:
+        if not mutating and not gen:
             self._depth = parent.get_depth() + 1
             self._children.append(self._tree.gen_node(self))
-            self._children.append(self._tree.gen_node(self))
+            if not single:
+                self._children.append(self._tree.gen_node(self))
         else:
-            if len(children) == 0:
+            if len(children) == 0 and not gen:
                 self._depth = parent.get_depth() + 1
                 self._children.append(self._tree.gen_node(self))
-                self._children.append(self._tree.gen_node(self))
-            else:
+                if not single:
+                    self._children.append(self._tree.gen_node(self))
+            elif not gen:
                 self._children = children
+                if not single and len(children) < 2:
+                    self._children.append(self._tree.gen_node(self))
+            else: self._children = children
 
         self.get_tree().check_tree_depth(self._depth)
 
@@ -353,11 +383,42 @@ class NonTerminal(Node):
         return self._depth
 
 
+class NonTerminalPair(NonTerminal):
+    def __init__(self, parent, children=[], mutating=False, gen=True):
+        NonTerminal.__init__(self, parent=parent, children=children, mutating=mutating, gen=gen)
+
+    def __str__(self):
+        representation = '(' + ' '
+        for child in self._children:
+                representation += child.__str__() + ' ' + self._symbol + ' '
+        representation = representation.rstrip(self._symbol + ' ')
+        return representation + ' )'
+
+
+class Pow2(NonTerminal):
+    def __init__(self, parent, children=[], mutating=False, gen=False):
+        NonTerminal.__init__(self, parent=parent, children=children, mutating=mutating, gen=gen, single=True)
+        self._symbol = '^2'
+
+    def __str__(self):
+        representation = '(' + ' '
+        representation += self._children[0].__str__() + self._symbol + ' '
+        return representation + ' )'
+
+    def eval(self):
+        self._value = 0.0
+        self._value = math.pow(float(self._children[0].eval()), 2)
+        return self._value
+
+
 class Terminal(Node):
     def __init__(self, parent):
         Node.__init__(self, parent)
         self._value = 0.0
         self.update_depth()
+    @staticmethod
+    def gen_float():
+        return math.trunc((1.0 / random.randint(1, 9))*10.00) / 10.0
 
     def eval(self):
         return self._value
@@ -396,14 +457,19 @@ class IntTerminal(Terminal):
     def eval(self):
         return self._value
 
+
 class ArrayVariableFloatTerminal(Terminal):
-    def __init__(self, parent):
+    def __init__(self, parent, hard_value=None, index=None):
         Terminal.__init__(self, parent)
         self._individual = None
         self._variables = ''
         self.update_parent(parent)
-        self._multiplier = 1.0/float(random.randint(1, 10))
-        self._index = int(random.choice(range(self._variables.__len__())))
+        if hard_value is None:
+            self._multiplier = Terminal.gen_float()
+            self._index = int(random.choice(range(self._variables.__len__())))
+        else:
+            self._multiplier = hard_value
+            self._index = index
 
     def update_parent(self, parent):
         Node.update_parent(self, parent)
@@ -418,6 +484,37 @@ class ArrayVariableFloatTerminal(Terminal):
         self._value = self._multiplier * data_row[self._index]
 
         return self._value
+
+
+class ArrayVariableSkewed(Terminal):
+    def __init__(self, parent, hard_value=None, index=None):
+        Terminal.__init__(self, parent)
+        self._individual = None
+        self._variables = ''
+        self._skew = float(random.randint(-10, 10))
+        self.update_parent(parent)
+
+        if hard_value is None:
+            self._multiplier = Terminal.gen_float()
+            self._index = int(random.choice(range(self._variables.__len__())))
+        else:
+            self._multiplier = hard_value
+            self._index = index
+
+    def update_parent(self, parent):
+        Node.update_parent(self, parent)
+        self._individual = self.get_tree().get_individual()
+        self._variables = self._individual.get_variables()
+
+    def __str__(self):
+        return '(' + str(self._multiplier) + self._variables[self._index] + ' + ' + str(self._skew) + ')'
+
+    def eval(self):
+        data_row = self._individual.get_data_row()
+        self._value = self._multiplier * data_row[self._index] + self._skew
+
+        return self._value
+
 
 class ArrayVariableTerminal(Terminal):
     def __init__(self, parent):
@@ -443,9 +540,9 @@ class ArrayVariableTerminal(Terminal):
         return self._value
 
 
-class Add (NonTerminal):
-    def __init__(self, parent, children=[], mutating=False):
-        NonTerminal.__init__(self, parent, children, mutating)
+class Add (NonTerminalPair):
+    def __init__(self, parent, children=[], mutating=False, gen=False):
+        NonTerminalPair.__init__(self, parent, children, mutating, gen)
         self._symbol = '+'
         self._value = 0.0
 
@@ -456,9 +553,9 @@ class Add (NonTerminal):
         return self._value
 
 
-class Multiply (NonTerminal):
-    def __init__(self, parent, children=[], mutating=False):
-        NonTerminal.__init__(self, parent, children, mutating)
+class Multiply (NonTerminalPair):
+    def __init__(self, parent, children=[], mutating=False, gen=False):
+        NonTerminalPair.__init__(self, parent, children, mutating, gen)
         self._symbol = '*'
         self._value = 0.0
 
@@ -474,9 +571,9 @@ class Multiply (NonTerminal):
         return self._value
 
 
-class Subtract (NonTerminal):
+class Subtract (NonTerminalPair):
     def __init__(self, parent, children=[], mutating=False):
-        NonTerminal.__init__(self, parent, children, mutating)
+        NonTerminalPair.__init__(self, parent, children, mutating)
         self._symbol = '-'
         self._value = 0.0
 
@@ -491,9 +588,9 @@ class Subtract (NonTerminal):
         return self._value
 
 
-class ProtectedDiv (NonTerminal):
+class ProtectedDiv (NonTerminalPair):
     def __init__(self, parent, children=[], mutating=False):
-        NonTerminal.__init__(self, parent, children, mutating)
+        NonTerminalPair.__init__(self, parent, children, mutating)
         self._symbol = '%'
         self._value = 0.0
 

@@ -26,8 +26,8 @@ class PopulationHandler:
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
                  tournament_size=5, elitism=False, fitness=None, dataset=None, target_fitness=0,
-                 non_terminals=['Add', 'Multiply'],
-                 terminals=['ArrayVariableFloatTerminal'], variables=['x', 'y']):
+                 non_terminals=['Add', 'Multiply', 'Pow2'],
+                 terminals=['ArrayVariableSkewed', 'ArrayVariableFloatTerminal'], variables=['x', 'y']):
         self._min_depth = min_depth
         self._max_depth = max_depth
         self._pop_size = pop_size
@@ -44,11 +44,19 @@ class PopulationHandler:
         self._dataset = dataset
 
     def build_population(self):
+        # self._population.append(ind.Individual(self._non_terminals, self._terminals, self._min_depth, self._max_depth,
+        #                                        self._terminals_chance, self._non_terminals_chance, self._variables,
+        #                                        ind.GROWTH, True))
+        # print self._population[0]
+        # self._fitness.eval_individual(self._dataset, self._population[0], self._target_fitness)
+        # print 'Fitness', self._population[0].get_fitness()
         for pop in range(self._pop_size):
             individual = ind.Individual(self._non_terminals, self._terminals, self._min_depth, self._max_depth,
                                         self._terminals_chance, self._non_terminals_chance, self._variables)
             print 'ind:', self._population.__len__()+1
             print individual
+            self._fitness.eval_individual(self._dataset, individual, self._target_fitness)
+            print 'Fitness', individual.get_fitness()
             # print 'Depth', individual.get_tree().get_tree_depth(), individual._max_depth
             self._population.append(individual)
 
@@ -60,6 +68,7 @@ class PopulationHandler:
         self._population[self._pop_size-1].print_stats()
         print 'Avg Fitness =', avg_fitness
         print 'Duplicated =', duplicated
+        return self._population[0].get_fitness()
 
     def do_evolution(self, cross_over_chance, mutation_chance):
 
@@ -81,11 +90,16 @@ class PopulationHandler:
         selected_reproductions = self.tournament_selection(selected_individuals, reproductions)
         selected_cross_overs = self.tournament_selection(selected_individuals, cross_overs)
         selected_mutations = self.tournament_selection(selected_individuals, mutations)
-
+        mutated_individuals = []
         # print 'Starting mutation pipeline. '
         for individual in selected_mutations:
-            individual.mutate()
-            self._fitness.eval_individual(self._dataset, individual, self._target_fitness)
+            # print individual
+            new_ind = copy.deepcopy(individual)
+            new_ind.mutate()
+            self._fitness.eval_individual(self._dataset, new_ind, self._target_fitness)
+            new_ind.renew_id()
+            # print new_ind
+            mutated_individuals.append(new_ind)
 
         # print 'Starting cross over pipeline. '
         group_1 = selected_cross_overs[:len(selected_cross_overs)/2]
@@ -118,7 +132,8 @@ class PopulationHandler:
                 if son_2.get_fitness() > individual_2.get_fitness():
                     better_than_dads += 1
 
-        self._population = selected_reproductions + selected_mutations + selected_cross_overs + crossed_overs
+        self._population = selected_reproductions + selected_mutations + mutated_individuals + selected_cross_overs + \
+                           crossed_overs
 
         if self._elitism:
             self._population = [elite_individual] + self._population
