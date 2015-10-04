@@ -1,6 +1,8 @@
 import math
 import collections
 
+DECIMALS = (10 * 16)
+
 __author__ = 'gorigan'
 
 
@@ -41,24 +43,24 @@ class MSEFitness(Fitness):
     def eval_individual(self, data, individual, target_fitness):
         if individual.get_fitness() == 0.0:
             individual_fitness = 0.0
-            avg = 0
-            values = []
+            # avg = 0
+            # values = []
             for data_row in data:
                 if len(data_row) > 0:
                     generated_value = individual.eval(data_row)
-                    diff = generated_value - target_fitness
+                    # target_fitness = - math.pow(data_row[len(data_row)-1], 2)
+                    diff = (generated_value - target_fitness)
+                    # values.append(diff)
+                    # avg += abs(diff)
+                    individual_fitness += math.fabs(diff)
 
-                    values.append(diff)
-                    avg += abs(diff)
-                    individual_fitness += math.pow(diff, 2)
+            # avg /= len(data)
+            # variance = 0
+            # for value in values:
+            #     variance += math.pow(value - avg, 2)
+            #+ math.sqrt(variance / len(data)
+            koza = math.pow(individual_fitness, 2) / len(data)
 
-            avg /= len(data)
-            variance = 0
-            for value in values:
-                variance += math.pow(value - avg, 2)
-
-            mse = math.sqrt(individual_fitness / len(data)) + math.sqrt(variance / len(data))
-
-            individual.set_fitness(mse)
+            individual.set_fitness(koza)
 
 

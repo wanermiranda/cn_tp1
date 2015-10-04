@@ -83,8 +83,8 @@ def main():
         raise
     population = 500
     generations = 500
-    mutation = 0.45
-    cross_over = 0.50
+    mutation = 0.35
+    cross_over = 0.60
     tournament_size = 7
     vars = ['x', 'y']
     elitism = False

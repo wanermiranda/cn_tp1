@@ -25,9 +25,9 @@ class PopulationHandler:
         return internal_list
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
-                 tournament_size=5, elitism=False, fitness=None, dataset=None, target_fitness=0,
-                 non_terminals=['Add', 'Multiply', 'Pow2'],
-                 terminals=['ArrayVariableSkewed', 'ArrayVariableFloatTerminal'], variables=['x', 'y']):
+                 tournament_size=5, elitism=False, fitness=None, dataset=None, target_fitness=1.0,
+                 non_terminals=['Add', 'Multiply', 'Pow2'], #, 'ArrayVariableSkewed''ArrayVariableFloatTerminal'
+                 terminals=['ArrayVariableSkewed', 'IntTerminal'], variables=['x', 'y']):
         self._min_depth = min_depth
         self._max_depth = max_depth
         self._pop_size = pop_size
