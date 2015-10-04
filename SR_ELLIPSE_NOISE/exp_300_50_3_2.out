@@ -1,0 +1,3116 @@
+dataset_file= dataset/SR_ellipse_noise.txt
+population= 50
+generations= 300
+tournament_size= 3
+cross_over= 0.6
+mutation= 0.3
+elitism= True
+(50, 2)
+============================================================================
+Build initial population
+ind: 1
+( 0.1y + 0.142857142857x )
+ind: 2
+( 1.0x + 0.166666666667y )
+ind: 3
+( ( 0.125x * 0.111111111111y ) + 0.25y )
+ind: 4
+( 0.111111111111y * ( ( ( 0.111111111111x * 0.5y ) * ( 0.166666666667x + ( ( 0.1x * 0.2y ) + 0.2y ) ) ) * 0.111111111111x ) )
+ind: 5
+( ( 0.333333333333x * 0.1x ) + 0.142857142857y )
+ind: 6
+( ( ( 1.0y + 0.1y ) + ( ( 0.5y + ( 0.1y + ( 0.5x + 0.111111111111x ) ) ) * ( 0.111111111111y * 0.1y ) ) ) + 0.2y )
+ind: 7
+( 0.25x + 0.1y )
+ind: 8
+( ( ( ( 0.333333333333x + 0.125y ) * 0.166666666667x ) + 0.111111111111x ) + ( ( ( 0.1x + 0.125y ) + 0.2x ) * 0.111111111111x ) )
+ind: 9
+( 0.142857142857x + ( ( 0.5y + 0.2x ) * 0.166666666667x ) )
+ind: 10
+( 0.166666666667y + 0.2x )
+ind: 11
+( 0.2x * 0.333333333333y )
+ind: 12
+( 0.5x + ( 0.166666666667y * ( 1.0y * 0.1y ) ) )
+ind: 13
+( 0.142857142857x + ( ( ( 0.111111111111y + ( 0.333333333333y + 0.5y ) ) * 0.142857142857x ) + 0.166666666667y ) )
+ind: 14
+( ( 0.2y + ( ( 0.125x + 0.1y ) * 0.1x ) ) + 0.1x )
+ind: 15
+( ( ( 0.166666666667y + ( 0.1x * 0.25y ) ) + ( ( ( ( 0.142857142857y + 1.0x ) + 1.0y ) + ( 0.333333333333y + ( 0.333333333333y * 0.1x ) ) ) + 0.142857142857x ) ) + ( ( 1.0y + 0.2x ) * ( 0.2x + ( 0.2y * 0.25x ) ) ) )
+ind: 16
+( 0.25y * ( ( 0.125x + 0.2x ) * ( ( 0.2x * ( ( 0.125y + 1.0x ) * 0.5x ) ) * ( ( ( 0.1y * 0.5y ) + 0.166666666667x ) + ( 0.142857142857x + ( 0.111111111111x + 0.1x ) ) ) ) ) )
+ind: 17
+( 0.333333333333x * 0.333333333333y )
+ind: 18
+( ( ( ( ( 0.25x * ( 0.2y * 0.25x ) ) * ( ( 0.111111111111x + 0.142857142857y ) + ( 0.142857142857x * 0.111111111111x ) ) ) + ( ( 0.5x * 0.125x ) * 0.125x ) ) + 1.0y ) * ( 1.0x + 0.5x ) )
+ind: 19
+( ( ( ( 0.2x * ( 0.142857142857x + ( 0.111111111111y * 0.142857142857y ) ) ) * ( 0.1x * 0.5y ) ) + ( 0.2y * 1.0x ) ) + ( 0.5y * 0.333333333333y ) )
+ind: 20
+( ( 0.125x + 0.2y ) * ( ( 0.25x + ( ( ( 0.333333333333x + 0.111111111111x ) + 0.5y ) * ( 0.5y * ( 1.0y * 1.0x ) ) ) ) + 1.0y ) )
+ind: 21
+( 0.2x * 0.5y )
+ind: 22
+( ( ( ( ( 0.166666666667x * 0.333333333333y ) + ( 0.111111111111x * 0.5x ) ) + ( 0.142857142857y * ( 0.1x + 0.25y ) ) ) * 0.5y ) * 1.0y )
+ind: 23
+( ( ( ( 0.5y * ( 0.111111111111y * 0.1x ) ) + ( ( 0.25x * 0.1x ) * ( ( 0.166666666667y * 1.0x ) * ( 0.166666666667x * 0.1y ) ) ) ) * ( ( 0.25x * 0.5y ) * 0.333333333333y ) ) * ( ( 0.111111111111x + 0.1x ) * 0.125y ) )
+ind: 24
+( ( 0.1y + ( ( ( ( 0.125x * 0.1y ) * ( 0.125y * 0.2x ) ) + 0.166666666667y ) * ( 0.2x * ( ( 0.166666666667y * 0.333333333333x ) + ( 0.125y + 0.125y ) ) ) ) ) * ( ( 0.2x * ( 0.1y + 1.0y ) ) * 0.111111111111y ) )
+ind: 25
+( 0.333333333333x * ( 0.125y * 0.25y ) )
+ind: 26
+( 0.2y * 0.1x )
+ind: 27
+( 0.2y + ( 0.25y * ( 0.125x + 0.1y ) ) )
+ind: 28
+( 0.333333333333x + 0.2y )
+ind: 29
+( ( 0.142857142857x * 0.125x ) + 0.25y )
+ind: 30
+( ( ( 0.2y * ( ( ( 0.1x * 0.166666666667y ) + 0.125y ) * ( 0.125y + ( 0.142857142857y * 0.166666666667y ) ) ) ) + ( 0.5x + 0.166666666667y ) ) + ( 0.25y * ( 0.142857142857x * ( ( 0.2x * 0.166666666667x ) * ( 0.2x + 0.333333333333x ) ) ) ) )
+ind: 31
+( 0.2y * ( 0.166666666667x * ( ( ( 0.142857142857x * ( 0.125x + 0.5y ) ) + 0.5y ) + ( ( ( 0.2x + 0.1x ) * 0.166666666667x ) * ( ( 0.111111111111y * 0.142857142857y ) + 0.125x ) ) ) ) )
+ind: 32
+( 0.142857142857y * 0.125x )
+ind: 33
+( 0.2x + ( ( ( ( ( 0.111111111111y * 0.125x ) * ( 1.0y + 0.2y ) ) * 0.2x ) * ( 0.166666666667x * 0.125y ) ) * ( ( ( ( 0.1y + 1.0y ) * 0.166666666667x ) + 0.1y ) * 1.0x ) ) )
+ind: 34
+( 0.25y * ( ( 1.0x * 0.5y ) + 0.142857142857y ) )
+ind: 35
+( 0.111111111111y + ( ( ( ( 1.0y * ( 0.125x + 0.125y ) ) * 0.25y ) + 0.333333333333x ) + 0.125y ) )
+ind: 36
+( 0.2x + 0.333333333333y )
+ind: 37
+( ( ( 0.125y * ( 0.111111111111y * ( 0.333333333333y + ( 0.1y + 0.166666666667y ) ) ) ) * 0.125x ) + 0.166666666667x )
+ind: 38
+( ( 0.166666666667y + 0.166666666667y ) * 1.0x )
+ind: 39
+( ( ( ( ( ( 0.333333333333y + 0.1x ) + ( 0.5y + 0.333333333333y ) ) * ( 0.111111111111y + ( 0.2y + 0.25x ) ) ) * ( 0.142857142857x + 0.125y ) ) * ( 0.142857142857y + ( ( 0.2y * ( 0.333333333333y + 1.0x ) ) + ( 0.166666666667x + 0.142857142857x ) ) ) ) + ( ( ( ( 0.25y + ( 0.25x * 0.2x ) ) + 0.1x ) + 0.142857142857y ) * ( ( ( 0.111111111111x * 1.0y ) + ( ( 0.25y * 0.2y ) + 0.142857142857y ) ) + 1.0y ) ) )
+ind: 40
+( 0.166666666667x + 0.2y )
+ind: 41
+( 0.166666666667x * ( 0.25y + 0.1y ) )
+ind: 42
+( ( 0.333333333333y + 0.5x ) * 0.142857142857y )
+ind: 43
+( ( 0.5x + 0.166666666667x ) * ( 0.125x + 0.2y ) )
+ind: 44
+( ( 0.1x * ( 0.2y + ( ( 0.5y * ( 0.5y * 0.142857142857y ) ) + 0.333333333333y ) ) ) * 0.142857142857y )
+ind: 45
+( 0.111111111111x * ( ( ( 0.142857142857y + 0.111111111111y ) * ( 0.125x * ( 0.125x + 1.0y ) ) ) + 0.1y ) )
+ind: 46
+( ( ( ( ( ( 1.0y + 0.1x ) + ( 1.0x + 0.125x ) ) * ( 0.166666666667x + ( 0.25x + 0.333333333333x ) ) ) + ( ( 0.166666666667y + ( 0.142857142857x * 0.166666666667x ) ) * ( 0.2x + ( 0.333333333333x + 0.111111111111y ) ) ) ) * ( 0.1y * ( 0.333333333333x + ( ( 0.111111111111x + 1.0x ) * 0.5x ) ) ) ) + ( ( 0.166666666667x * 1.0y ) * ( 0.125y * ( ( ( 0.125y * 0.25x ) + 0.166666666667x ) * 1.0x ) ) ) )
+ind: 47
+( 0.25x * ( 0.25x * 0.142857142857y ) )
+ind: 48
+( ( ( 0.142857142857x * 0.142857142857x ) + ( ( 0.25y + 0.5x ) * ( ( 0.125x + ( 0.1x + 1.0y ) ) * 0.5y ) ) ) + ( 0.111111111111x * ( ( 0.111111111111x + 0.2y ) + ( 0.333333333333y * 0.2x ) ) ) )
+ind: 49
+( ( ( 0.111111111111x + 0.333333333333y ) * ( 0.125y + ( 0.5y * ( 0.1x + ( 0.2x + 0.25x ) ) ) ) ) + ( ( ( ( 0.25y + ( 0.142857142857x * 0.166666666667y ) ) + 0.125y ) + ( 0.111111111111y * 0.333333333333y ) ) + ( ( ( 1.0y * ( 0.111111111111x * 0.1x ) ) * 0.111111111111y ) + 0.25y ) ) )
+ind: 50
+( 0.142857142857y + ( 0.111111111111x + ( ( 0.5y * ( ( 0.125x + 0.1x ) * 0.166666666667x ) ) + 0.5y ) ) )
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( ( ( ( ( ( 1.0y + 0.1x ) + ( 1.0x + 0.125x ) ) * ( 0.166666666667x + ( 0.25x + 0.333333333333x ) ) ) + ( ( 0.166666666667y + ( 0.142857142857x * 0.166666666667x ) ) * ( 0.2x + ( 0.333333333333x + 0.111111111111y ) ) ) ) * ( 0.1y * ( 0.333333333333x + ( ( 0.111111111111x + 1.0x ) * 0.5x ) ) ) ) + ( ( 0.166666666667x * 1.0y ) * ( 0.125y * ( ( ( 0.125y * 0.25x ) + 0.166666666667x ) * 1.0x ) ) ) )
+Fitness = 1229727.22394
+Avg Fitness = 37469.0136167
+Duplicated = 0
+============================================================================
+Evaluate Gen  1
+New Population 72
+Better than Dads 10
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( ( ( ( 0.2x * ( 0.142857142857x + ( 0.111111111111y * 0.142857142857y ) ) ) * ( 0.1x * 0.5y ) ) + ( 0.2y * 1.0x ) ) + ( 0.5y * 0.333333333333y ) )
+Fitness = 411.828278516
+Avg Fitness = 83.4558876096
+Duplicated = 0
+============================================================================
+Evaluate Gen  2
+New Population 66
+Better than Dads 7
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( 0.5x + ( 0.166666666667y * ( 1.0y * 0.1y ) ) )
+Fitness = 127.654033215
+Avg Fitness = 32.9379995491
+Duplicated = 2
+============================================================================
+Evaluate Gen  3
+New Population 73
+Better than Dads 15
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( 0.111111111111y * ( 0.25x * ( 0.25x * 0.142857142857y ) ) )
+Fitness = 35.8572700727
+Avg Fitness = 18.1144819315
+Duplicated = 2
+============================================================================
+Evaluate Gen  4
+New Population 70
+Better than Dads 12
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( 0.2y * ( 0.166666666667x * ( ( ( 0.142857142857x * 0.142857142857y ) + 0.5y ) + ( ( ( 0.2x + 0.1x ) * 0.166666666667x ) * ( ( 0.111111111111y * 0.142857142857y ) + 0.125x ) ) ) ) )
+Fitness = 28.8798196004
+Avg Fitness = 15.1699234454
+Duplicated = 3
+============================================================================
+Evaluate Gen  5
+New Population 73
+Better than Dads 15
+Best Ind: ( 0.1y + 0.142857142857x )
+Fitness = 2.61824385848
+Worst Ind: ( 0.333333333333x * ( 0.125y * 0.25y ) )
+Fitness = 23.0649715289
+Avg Fitness = 12.7237197564
+Duplicated = 7
+============================================================================
+Evaluate Gen  6
+New Population 70
+Better than Dads 13
+Best Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Worst Ind: ( ( 0.1x * ( 0.2y + ( ( 0.5y * ( 0.5y * 0.142857142857y ) ) + 0.333333333333y ) ) ) * 0.142857142857y )
+Fitness = 19.0702345434
+Avg Fitness = 10.3696887569
+Duplicated = 5
+============================================================================
+Evaluate Gen  7
+New Population 68
+Better than Dads 11
+Best Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Worst Ind: ( ( 0.125x + ( 0.2y * 0.1x ) ) * ( 0.111111111111x * 0.5y ) )
+Fitness = 14.5228615242
+Avg Fitness = 9.14282516007
+Duplicated = 6
+============================================================================
+Evaluate Gen  8
+New Population 68
+Better than Dads 12
+Best Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Worst Ind: ( 0.142857142857x + ( ( ( 0.111111111111y + 0.142857142857y ) * 0.142857142857x ) + 0.166666666667y ) )
+Fitness = 13.1105706617
+Avg Fitness = 8.41642837796
+Duplicated = 5
+============================================================================
+Evaluate Gen  9
+New Population 70
+Better than Dads 14
+Best Ind: ( 0.1x + 0.2y )
+Fitness = 2.36103736932
+Worst Ind: ( 0.142857142857y * ( 0.166666666667x + ( ( 0.142857142857y * 0.2y ) + 0.2y ) ) )
+Fitness = 10.6822938483
+Avg Fitness = 7.50172283978
+Duplicated = 5
+============================================================================
+Evaluate Gen  10
+New Population 70
+Better than Dads 15
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.25x + 0.1y )
+Fitness = 9.88669034675
+Avg Fitness = 7.09309745177
+Duplicated = 5
+============================================================================
+Evaluate Gen  11
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( 0.2y * 0.1x ) + 0.142857142857y )
+Fitness = 9.11010751919
+Avg Fitness = 6.68159322013
+Duplicated = 6
+============================================================================
+Evaluate Gen  12
+New Population 71
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( 0.2x + 0.2y ) * 0.1x )
+Fitness = 8.76969678504
+Avg Fitness = 6.0991790995
+Duplicated = 6
+============================================================================
+Evaluate Gen  13
+New Population 74
+Better than Dads 17
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.2x * 0.333333333333y )
+Fitness = 8.10076447155
+Avg Fitness = 5.43251378632
+Duplicated = 9
+============================================================================
+Evaluate Gen  14
+New Population 71
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.2x )
+Fitness = 7.22364379978
+Avg Fitness = 4.7584319508
+Duplicated = 10
+============================================================================
+Evaluate Gen  15
+New Population 70
+Better than Dads 14
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.2x )
+Fitness = 6.11025422425
+Avg Fitness = 4.41189432573
+Duplicated = 10
+============================================================================
+Evaluate Gen  16
+New Population 68
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + ( ( ( 0.111111111111y + 0.142857142857y ) * 0.142857142857x ) + 0.1y ) )
+Fitness = 5.80672146835
+Avg Fitness = 4.23102286033
+Duplicated = 11
+============================================================================
+Evaluate Gen  17
+New Population 73
+Better than Dads 15
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( 0.1x * ( 0.166666666667x + 0.142857142857y ) ) + 0.142857142857y )
+Fitness = 5.30035786118
+Avg Fitness = 3.90070499381
+Duplicated = 12
+============================================================================
+Evaluate Gen  18
+New Population 68
+Better than Dads 14
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.111111111111y + 0.2x )
+Fitness = 5.07020417292
+Avg Fitness = 3.76766879485
+Duplicated = 14
+============================================================================
+Evaluate Gen  19
+New Population 69
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1y + 0.1x )
+Fitness = 4.61285622935
+Avg Fitness = 3.59301265691
+Duplicated = 17
+============================================================================
+Evaluate Gen  20
+New Population 65
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( 0.125x * 0.111111111111y ) + 0.25y )
+Fitness = 4.51801601696
+Avg Fitness = 3.52166491867
+Duplicated = 15
+============================================================================
+Evaluate Gen  21
+New Population 68
+Better than Dads 15
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( ( 0.1x * 0.142857142857x ) + 0.142857142857y ) + 0.142857142857y )
+Fitness = 4.36385380636
+Avg Fitness = 3.44026061677
+Duplicated = 13
+============================================================================
+Evaluate Gen  22
+New Population 70
+Better than Dads 14
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + ( 0.142857142857y + 0.1x ) )
+Fitness = 4.14284514689
+Avg Fitness = 3.29369304456
+Duplicated = 13
+============================================================================
+Evaluate Gen  23
+New Population 66
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + ( 0.125y * ( 0.111111111111y * ( 0.333333333333y + ( 0.1y + 0.166666666667y ) ) ) ) )
+Fitness = 4.00652710029
+Avg Fitness = 3.18360780328
+Duplicated = 18
+============================================================================
+Evaluate Gen  24
+New Population 66
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + ( ( ( 0.111111111111y + 0.142857142857y ) * ( ( 0.111111111111y + 0.142857142857y ) * ( 0.2y * 0.1x ) ) ) + 0.1y ) )
+Fitness = 3.96177391676
+Avg Fitness = 3.08487237759
+Duplicated = 17
+============================================================================
+Evaluate Gen  25
+New Population 67
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1y + ( ( 0.1x * 0.142857142857x ) + 0.142857142857y ) )
+Fitness = 3.6979312458
+Avg Fitness = 2.9060612368
+Duplicated = 20
+============================================================================
+Evaluate Gen  26
+New Population 68
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( ( ( 0.166666666667y * ( 0.111111111111y * ( 0.333333333333y + ( 0.1y + 0.1y ) ) ) ) * 0.142857142857y ) + 0.166666666667x )
+Fitness = 3.44461378672
+Avg Fitness = 2.78566453808
+Duplicated = 22
+============================================================================
+Evaluate Gen  27
+New Population 66
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1y + ( ( 0.1x * 0.1x ) + 0.142857142857y ) )
+Fitness = 3.31812287696
+Avg Fitness = 2.74234926809
+Duplicated = 24
+============================================================================
+Evaluate Gen  28
+New Population 69
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.166666666667y )
+Fitness = 3.002832324
+Avg Fitness = 2.64248351566
+Duplicated = 30
+============================================================================
+Evaluate Gen  29
+New Population 72
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.142857142857y )
+Fitness = 2.69324165852
+Avg Fitness = 2.5914228534
+Duplicated = 34
+============================================================================
+Evaluate Gen  30
+New Population 64
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.142857142857y )
+Fitness = 2.69324165852
+Avg Fitness = 2.58544420863
+Duplicated = 33
+============================================================================
+Evaluate Gen  31
+New Population 67
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.142857142857y )
+Fitness = 2.69324165852
+Avg Fitness = 2.57724156106
+Duplicated = 34
+============================================================================
+Evaluate Gen  32
+New Population 61
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.142857142857y )
+Fitness = 2.69324165852
+Avg Fitness = 2.56594425104
+Duplicated = 33
+============================================================================
+Evaluate Gen  33
+New Population 63
+Better than Dads 12
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.142857142857y )
+Fitness = 2.69324165852
+Avg Fitness = 2.56216842982
+Duplicated = 33
+============================================================================
+Evaluate Gen  34
+New Population 66
+Better than Dads 12
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.1y )
+Fitness = 2.61824385848
+Avg Fitness = 2.55396578226
+Duplicated = 34
+============================================================================
+Evaluate Gen  35
+New Population 65
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.1y )
+Fitness = 2.61824385848
+Avg Fitness = 2.55093518706
+Duplicated = 34
+============================================================================
+Evaluate Gen  36
+New Population 72
+Better than Dads 12
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.1y )
+Fitness = 2.61824385848
+Avg Fitness = 2.54564990587
+Duplicated = 34
+============================================================================
+Evaluate Gen  37
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.111111111111y )
+Fitness = 2.58310048037
+Avg Fitness = 2.53950286915
+Duplicated = 37
+============================================================================
+Evaluate Gen  38
+New Population 64
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.111111111111y + 0.142857142857x )
+Fitness = 2.58310048037
+Avg Fitness = 2.53935678585
+Duplicated = 37
+============================================================================
+Evaluate Gen  39
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857x + 0.111111111111y )
+Fitness = 2.58310048037
+Avg Fitness = 2.53891853595
+Duplicated = 38
+============================================================================
+Evaluate Gen  40
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.53431171266
+Duplicated = 39
+============================================================================
+Evaluate Gen  41
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.5252079802
+Duplicated = 38
+============================================================================
+Evaluate Gen  42
+New Population 69
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.50700051527
+Duplicated = 37
+============================================================================
+Evaluate Gen  43
+New Population 65
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.50473362445
+Duplicated = 37
+============================================================================
+Evaluate Gen  44
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.142857142857y )
+Fitness = 2.57944839786
+Avg Fitness = 2.48728618995
+Duplicated = 37
+============================================================================
+Evaluate Gen  45
+New Population 65
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.47591556667
+Duplicated = 37
+============================================================================
+Evaluate Gen  46
+New Population 69
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.45239132096
+Duplicated = 37
+============================================================================
+Evaluate Gen  47
+New Population 64
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.43119310398
+Duplicated = 37
+============================================================================
+Evaluate Gen  48
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.1x )
+Fitness = 2.57944839786
+Avg Fitness = 2.42212554071
+Duplicated = 37
+============================================================================
+Evaluate Gen  49
+New Population 64
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.166666666667y )
+Fitness = 2.46610385698
+Avg Fitness = 2.40540196744
+Duplicated = 39
+============================================================================
+Evaluate Gen  50
+New Population 65
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.125x )
+Fitness = 2.46610385698
+Avg Fitness = 2.40385893786
+Duplicated = 39
+============================================================================
+Evaluate Gen  51
+New Population 70
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.125x )
+Fitness = 2.46610385698
+Avg Fitness = 2.39101553896
+Duplicated = 39
+============================================================================
+Evaluate Gen  52
+New Population 67
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.166666666667y )
+Fitness = 2.46610385698
+Avg Fitness = 2.3802734698
+Duplicated = 39
+============================================================================
+Evaluate Gen  53
+New Population 68
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.3668702854
+Duplicated = 43
+============================================================================
+Evaluate Gen  54
+New Population 64
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.36631198523
+Duplicated = 43
+============================================================================
+Evaluate Gen  55
+New Population 67
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.142857142857y )
+Fitness = 2.38895237793
+Avg Fitness = 2.36575368506
+Duplicated = 43
+============================================================================
+Evaluate Gen  56
+New Population 66
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.142857142857y )
+Fitness = 2.38895237793
+Avg Fitness = 2.36371149322
+Duplicated = 43
+============================================================================
+Evaluate Gen  57
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.142857142857y )
+Fitness = 2.38895237793
+Avg Fitness = 2.36166930138
+Duplicated = 43
+============================================================================
+Evaluate Gen  58
+New Population 68
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.36166930138
+Duplicated = 43
+============================================================================
+Evaluate Gen  59
+New Population 67
+Better than Dads 12
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.35962710954
+Duplicated = 43
+============================================================================
+Evaluate Gen  60
+New Population 65
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.142857142857y )
+Fitness = 2.38895237793
+Avg Fitness = 2.35962710954
+Duplicated = 43
+============================================================================
+Evaluate Gen  61
+New Population 67
+Better than Dads 12
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.35517543454
+Duplicated = 43
+============================================================================
+Evaluate Gen  62
+New Population 68
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.35220765121
+Duplicated = 43
+============================================================================
+Evaluate Gen  63
+New Population 65
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.35016545937
+Duplicated = 43
+============================================================================
+Evaluate Gen  64
+New Population 66
+Better than Dads 16
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.35016545937
+Duplicated = 43
+============================================================================
+Evaluate Gen  65
+New Population 66
+Better than Dads 15
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.34868156771
+Duplicated = 43
+============================================================================
+Evaluate Gen  66
+New Population 64
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.34367159253
+Duplicated = 43
+============================================================================
+Evaluate Gen  67
+New Population 67
+Better than Dads 13
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.142857142857y + 0.125x )
+Fitness = 2.38895237793
+Avg Fitness = 2.34014550903
+Duplicated = 43
+============================================================================
+Evaluate Gen  68
+New Population 65
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.125x + 0.142857142857y )
+Fitness = 2.38895237793
+Avg Fitness = 2.33457723369
+Duplicated = 43
+============================================================================
+Evaluate Gen  69
+New Population 65
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.2y )
+Fitness = 2.36103736932
+Avg Fitness = 2.33049285001
+Duplicated = 45
+============================================================================
+Evaluate Gen  70
+New Population 65
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.2y )
+Fitness = 2.36103736932
+Avg Fitness = 2.32679048403
+Duplicated = 45
+============================================================================
+Evaluate Gen  71
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1y + ( 0.1x + 0.1y ) )
+Fitness = 2.36103736932
+Avg Fitness = 2.32216252656
+Duplicated = 46
+============================================================================
+Evaluate Gen  72
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.2y )
+Fitness = 2.36103736932
+Avg Fitness = 2.3156833861
+Duplicated = 47
+============================================================================
+Evaluate Gen  73
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  74
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  75
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  76
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  77
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  78
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  79
+New Population 63
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  80
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  81
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  82
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  83
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  84
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  85
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  86
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  87
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  88
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  89
+New Population 63
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  90
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  91
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  92
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  93
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  94
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  95
+New Population 67
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  96
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  97
+New Population 59
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  98
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  99
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  100
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  101
+New Population 70
+Better than Dads 2
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  102
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  103
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  104
+New Population 69
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  105
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  106
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  107
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  108
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  109
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  110
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  111
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  112
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  113
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  114
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  115
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  116
+New Population 67
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  117
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  118
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  119
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  120
+New Population 72
+Better than Dads 2
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  121
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  122
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  123
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  124
+New Population 71
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  125
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  126
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  127
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  128
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  129
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  130
+New Population 58
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  131
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  132
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  133
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  134
+New Population 61
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  135
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  136
+New Population 59
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  137
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  138
+New Population 71
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  139
+New Population 67
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  140
+New Population 68
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  141
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  142
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  143
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  144
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  145
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  146
+New Population 70
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  147
+New Population 64
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  148
+New Population 70
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  149
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  150
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  151
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  152
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  153
+New Population 70
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  154
+New Population 71
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  155
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  156
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  157
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  158
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  159
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  160
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  161
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  162
+New Population 65
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  163
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  164
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  165
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  166
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  167
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  168
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  169
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  170
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  171
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  172
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  173
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  174
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  175
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  176
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  177
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  178
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  179
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  180
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  181
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  182
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  183
+New Population 63
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  184
+New Population 73
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  185
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  186
+New Population 71
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  187
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  188
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  189
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  190
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  191
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  192
+New Population 68
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  193
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  194
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  195
+New Population 66
+Better than Dads 10
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  196
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  197
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  198
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  199
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  200
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  201
+New Population 72
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  202
+New Population 73
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  203
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  204
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  205
+New Population 61
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  206
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  207
+New Population 67
+Better than Dads 11
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  208
+New Population 68
+Better than Dads 2
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  209
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  210
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  211
+New Population 61
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  212
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  213
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  214
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  215
+New Population 68
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  216
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  217
+New Population 74
+Better than Dads 2
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  218
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  219
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  220
+New Population 61
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  221
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  222
+New Population 58
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  223
+New Population 64
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  224
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  225
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  226
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  227
+New Population 70
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  228
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  229
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  230
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  231
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  232
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  233
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  234
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  235
+New Population 71
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  236
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  237
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  238
+New Population 65
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  239
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  240
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  241
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  242
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  243
+New Population 72
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  244
+New Population 68
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  245
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  246
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  247
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  248
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  249
+New Population 61
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  250
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  251
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  252
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  253
+New Population 61
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  254
+New Population 65
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  255
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  256
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  257
+New Population 61
+Better than Dads 9
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  258
+New Population 70
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  259
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  260
+New Population 63
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  261
+New Population 63
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  262
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  263
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  264
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  265
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  266
+New Population 69
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  267
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  268
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  269
+New Population 64
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  270
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  271
+New Population 69
+Better than Dads 1
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  272
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  273
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  274
+New Population 66
+Better than Dads 4
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  275
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  276
+New Population 62
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  277
+New Population 69
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  278
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  279
+New Population 68
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  280
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  281
+New Population 58
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  282
+New Population 64
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  283
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  284
+New Population 62
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  285
+New Population 70
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  286
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  287
+New Population 64
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  288
+New Population 64
+Better than Dads 2
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  289
+New Population 65
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  290
+New Population 63
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  291
+New Population 66
+Better than Dads 8
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  292
+New Population 66
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  293
+New Population 65
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  294
+New Population 61
+Better than Dads 3
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  295
+New Population 67
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  296
+New Population 71
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  297
+New Population 61
+Better than Dads 7
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  298
+New Population 68
+Better than Dads 6
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  299
+New Population 67
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48
+============================================================================
+Evaluate Gen  300
+New Population 63
+Better than Dads 5
+Best Ind: ( 0.166666666667y + 0.1x )
+Fitness = 2.3147577946
+Worst Ind: ( 0.1x + 0.166666666667y )
+Fitness = 2.3147577946
+Avg Fitness = 2.3147577946
+Duplicated = 48

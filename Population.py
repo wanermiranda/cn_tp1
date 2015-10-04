@@ -25,9 +25,9 @@ class PopulationHandler:
         return internal_list
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
-                 tournament_size=5, elitism=False, fitness=None, dataset=None,
-                 non_terminals=['Add', 'Subtract', 'Multiply'],
-                 terminals=['IntTerminal', 'ArrayVariableTerminal'], variables=['x', 'y']):
+                 tournament_size=5, elitism=False, fitness=None, dataset=None, target_fitness=0,
+                 non_terminals=['Add', 'Multiply'],
+                 terminals=['ArrayVariableFloatTerminal'], variables=['x', 'y']):
         self._min_depth = min_depth
         self._max_depth = max_depth
         self._pop_size = pop_size
@@ -40,6 +40,7 @@ class PopulationHandler:
         self._tournament_size = tournament_size
         self._elitism = elitism
         self._fitness = fitness
+        self._target_fitness = target_fitness
         self._dataset = dataset
 
     def build_population(self):
@@ -52,7 +53,7 @@ class PopulationHandler:
             self._population.append(individual)
 
     def eval(self):
-        self._population, avg_fitness, duplicated = self._fitness.eval(self._population, self._dataset, self._pop_size)
+        self._population, avg_fitness, duplicated = self._fitness.eval(self._population, self._dataset, self._pop_size, self._target_fitness)
         print 'Best',
         self._population[0].print_stats()
         print 'Worst',
@@ -61,6 +62,7 @@ class PopulationHandler:
         print 'Duplicated =', duplicated
 
     def do_evolution(self, cross_over_chance, mutation_chance):
+
         if (cross_over_chance + mutation_chance) > 1:
             raise ValueError('The sum of the chances must be equals to 1 or less.')
         selected_individuals = self._population
@@ -83,7 +85,7 @@ class PopulationHandler:
         # print 'Starting mutation pipeline. '
         for individual in selected_mutations:
             individual.mutate()
-            self._fitness.eval_individual(self._dataset, individual)
+            self._fitness.eval_individual(self._dataset, individual, self._target_fitness)
 
         # print 'Starting cross over pipeline. '
         group_1 = selected_cross_overs[:len(selected_cross_overs)/2]
@@ -94,28 +96,27 @@ class PopulationHandler:
         for position in range(how_much):
             individual_1 = group_1[position]
             individual_2 = group_2[position]
-            if not individual_1.equals(individual_2):
 
-                son_1 = copy.deepcopy(individual_1)
-                son_2 = copy.deepcopy(individual_2)
+            son_1 = copy.deepcopy(individual_1)
+            son_2 = copy.deepcopy(individual_2)
 
-                selected_node1 = copy.deepcopy(son_1.select_node())
-                selected_node2 = copy.deepcopy(son_2.select_node())
+            selected_node1 = copy.deepcopy(son_1.select_node())
+            selected_node2 = copy.deepcopy(son_2.select_node())
 
-                res_1 = son_1.cross_over(selected_node1, selected_node2)
-                res_2 = son_2.cross_over(selected_node2, selected_node1)
+            res_1 = son_1.cross_over(selected_node1, selected_node2)
+            res_2 = son_2.cross_over(selected_node2, selected_node1)
 
-                if not (son_1.get_tree_depth() > self._max_depth or not res_1):
-                    self._fitness.eval_individual(self._dataset, son_1)
-                    crossed_overs.append(son_1)
-                    if son_1.get_fitness() > individual_1.get_fitness():
-                        better_than_dads += 1
+            if not (son_1.get_tree_depth() > self._max_depth or not res_1):
+                self._fitness.eval_individual(self._dataset, son_1, self._target_fitness)
+                crossed_overs.append(son_1)
+                if son_1.get_fitness() > individual_1.get_fitness():
+                    better_than_dads += 1
 
-                if not (son_2.get_tree_depth() > self._max_depth or not res_2):
-                    self._fitness.eval_individual(self._dataset, son_2)
-                    crossed_overs.append(son_2)
-                    if son_2.get_fitness() > individual_2.get_fitness():
-                        better_than_dads += 1
+            if not (son_2.get_tree_depth() > self._max_depth or not res_2):
+                self._fitness.eval_individual(self._dataset, son_2, self._target_fitness)
+                crossed_overs.append(son_2)
+                if son_2.get_fitness() > individual_2.get_fitness():
+                    better_than_dads += 1
 
         self._population = selected_reproductions + selected_mutations + selected_cross_overs + crossed_overs
 

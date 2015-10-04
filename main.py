@@ -1,21 +1,30 @@
 #!/bin/python
 from Population import PopulationHandler
-
-__author__ = 'Waner Miranda'
 import numpy as np
 import sys
 import getopt
 import fitness as ft
 
+__author__ = 'Waner Miranda'
+
 
 class MultiVariableRegression:
+    """
+        Class designed to contain the main definition of the problem to be solved by the GP
+    """
     def __init__(self, dataset, population, generations, tournament_size, elitism, mutation_chance, cross_over_chance):
-        """
 
-        :type dataset: unicode
-        :type config: unicode
+        """
+        @param dataset: list
+        @param population: int
+        @param generations: int
+        @param tournament_size: int
+        @param elitism: Boolean
+        @param mutation_chance: float
+        @param cross_over_chance: float
         """
         self._dataset = []
+        # Convert the dataset form the text file into a list of floats
         for line in open(dataset):
             value_line = []
             for value in line.rstrip('\n\r').split():
@@ -25,18 +34,19 @@ class MultiVariableRegression:
                 self._dataset.append(value_line)
         self._dataset = np.array(self._dataset)
         print self._dataset.shape
-        r, c = self._dataset.shape[:2]
-        if c == 3:
-            self._dataset = self._dataset[:, 1:]
+
         print '============================================================================'
         print 'Build initial population'
+        # Circles and Ellipses can be expressed in forms like (x/a)^2 + (y/b)^2 = 1
+        # The target fitness was set to 1
         pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
-                                        dataset=self._dataset, variables=['x', 'y'], fitness=ft.ErrorAbs())
+                                        dataset=self._dataset, variables=['x', 'y'], fitness=ft.ErrorAbs(),
+                                        target_fitness=1)
         pop_builder.build_population()
         pop_builder.eval()
         for generation in range(generations):
             print '============================================================================'
-            print 'Evaluate Gen ', generation+1
+            print 'Evaluate Gen ', generation + 1
             new_pop, better_than_dads = pop_builder.do_evolution(cross_over_chance, mutation_chance)
 
             print 'New Population', new_pop
@@ -65,8 +75,8 @@ def main():
         raise
     population = 500
     generations = 500
-    mutation = 0.05
-    cross_over = 0.9
+    mutation = 0.35
+    cross_over = 0.6
     tournament_size = 7
     elitism = False
     for opt, arg in opts:

@@ -1,0 +1,3116 @@
+dataset_file= dataset/SR_circle.txt
+population= 50
+generations= 300
+tournament_size= 7
+cross_over= 0.9
+mutation= 0.05
+elitism= True
+(50, 2)
+============================================================================
+Build initial population
+ind: 1
+( ( ( 2x - ( 5y * ( 95.0 * ( 8y * 2x ) ) ) ) * ( ( ( ( 7y * 10y ) - 6x ) - ( ( 78.0 * 9x ) - 8y ) ) + 6y ) ) - ( 95.0 * 18.0 ) )
+ind: 2
+( ( ( ( ( 69.0 - 3x ) + 7x ) - 87.0 ) - ( ( 9y + ( 3y - 7x ) ) + 72.0 ) ) * 4y )
+ind: 3
+( 9x * ( ( 10x * 1y ) * ( 7y - ( ( 2y + 41.0 ) - ( 5x + 1.0 ) ) ) ) )
+ind: 4
+( 4.0 - ( ( 7y * ( ( ( 97.0 * 4y ) + 1x ) * 4x ) ) - 44.0 ) )
+ind: 5
+( 6x + 1y )
+ind: 6
+( 4y - ( 5y - ( ( 31.0 * ( 79.0 + ( 3y + 10y ) ) ) * 4x ) ) )
+ind: 7
+( ( ( ( 2.0 + 93.0 ) + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - ( 1x - 8y ) )
+ind: 8
+( 51.0 * ( ( 8x + ( 13.0 - 1y ) ) - 13.0 ) )
+ind: 9
+( ( 8x - ( 1y * 1x ) ) * ( 7y - ( 29.0 + ( ( 30.0 + ( 15.0 * 8x ) ) + 9x ) ) ) )
+ind: 10
+( ( 8y + 8x ) - 63.0 )
+ind: 11
+( 67.0 - ( ( ( 1y - 7y ) * ( 6x + ( 7y * ( 35.0 + 8.0 ) ) ) ) * ( ( 3y * ( ( 25.0 + 1y ) - ( 21.0 * 9x ) ) ) - ( 7x * 50.0 ) ) ) )
+ind: 12
+( ( ( 3y - 41.0 ) - ( ( ( ( 2.0 - 2y ) * 7y ) + ( ( 10x - 80.0 ) + 1x ) ) - 42.0 ) ) + ( 93.0 * 7y ) )
+ind: 13
+( ( 10y + 1x ) + 29.0 )
+ind: 14
+( ( 45.0 - ( ( 10x - ( 91.0 - ( 2x + 7.0 ) ) ) + ( ( 7.0 - 3y ) - 79.0 ) ) ) - 5.0 )
+ind: 15
+( 43.0 * ( 10x - ( ( ( ( 62.0 - 33.0 ) * ( 6x + 74.0 ) ) + ( 4y * 8x ) ) - ( 83.0 - ( ( 10y - 4y ) * 5x ) ) ) ) )
+ind: 16
+( ( ( 10y - ( ( ( 83.0 * 46.0 ) - ( 8x * 1y ) ) * ( 89.0 - 5x ) ) ) - ( ( 79.0 - ( 2y * 1y ) ) * ( ( ( 63.0 + 4x ) - 93.0 ) - ( 90.0 + 40.0 ) ) ) ) - 3y )
+ind: 17
+( ( ( 7.0 * ( 6y * 7x ) ) * 6y ) + ( 67.0 - ( ( 5x * 81.0 ) - ( 5y - 5y ) ) ) )
+ind: 18
+( 64.0 + ( ( 10y + ( 5y + ( ( 17.0 + 2x ) - 8y ) ) ) * ( ( 5x * ( 19.0 - ( 10y - 65.0 ) ) ) + 6y ) ) )
+ind: 19
+( ( 7x * ( 2x + ( ( ( 81.0 + 6x ) - ( 3y * 87.0 ) ) + ( 80.0 - ( 84.0 * 4y ) ) ) ) ) - ( 14.0 - 67.0 ) )
+ind: 20
+( ( ( ( ( 1y * ( 47.0 + 73.0 ) ) - ( ( 2x * 10x ) + 77.0 ) ) + ( ( 1y - 6y ) - 16.0 ) ) + 6x ) - ( 87.0 * ( 96.0 + 25.0 ) ) )
+ind: 21
+( ( ( 4x * ( 6y - ( ( 32.0 * 3y ) - ( 10x - 52.0 ) ) ) ) * 2y ) + 77.0 )
+ind: 22
+( ( ( 4y + 2y ) * 21.0 ) - ( 10x + 24.0 ) )
+ind: 23
+( ( ( ( ( 14.0 - ( 6x + 77.0 ) ) * ( ( 2x + 5x ) + ( 87.0 - 5y ) ) ) - ( 18.0 + 56.0 ) ) - ( ( ( 5x - 87.0 ) * ( ( 32.0 - 35.0 ) - 2y ) ) * 5y ) ) + 87.0 )
+ind: 24
+( ( 5x * ( ( ( ( 73.0 + 1y ) - ( 10x - 6x ) ) * 2y ) * 23.0 ) ) * 42.0 )
+ind: 25
+( ( 9y * 14.0 ) * ( 5x + ( ( 55.0 + 9y ) + 5x ) ) )
+ind: 26
+( 4x * 1y )
+ind: 27
+( 1x - ( 36.0 - ( 6x - ( ( ( 15.0 + 8x ) * ( 38.0 - 59.0 ) ) + 6y ) ) ) )
+ind: 28
+( ( ( 1y - 85.0 ) - ( 79.0 - ( 59.0 * ( ( 8x - 10y ) - 21.0 ) ) ) ) - ( 9y + 2y ) )
+ind: 29
+( ( 7x - 100.0 ) + ( ( 4y * ( ( ( 4y - 7y ) + 53.0 ) * ( ( 49.0 * 90.0 ) - ( 3y + 10x ) ) ) ) - 17.0 ) )
+ind: 30
+( 9y * 3x )
+ind: 31
+( ( 8y + ( 23.0 - 9y ) ) * ( ( 18.0 + ( 5y * ( ( 1.0 * 10x ) - 6y ) ) ) + ( ( ( 8y - 1y ) - 4x ) * ( ( 3x - 8x ) * 8y ) ) ) )
+ind: 32
+( 5x * ( ( ( 49.0 + ( ( 83.0 - 9x ) + 98.0 ) ) * ( 9y * ( 73.0 - ( 5x + 9y ) ) ) ) + 1y ) )
+ind: 33
+( ( ( 8x * ( 36.0 + ( 3y + 5y ) ) ) + 91.0 ) * 55.0 )
+ind: 34
+( ( ( ( 3y * 7y ) + ( ( ( 90.0 + 75.0 ) * ( 14.0 - 48.0 ) ) * ( ( 59.0 - 34.0 ) - ( 4y + 10y ) ) ) ) - 7y ) * 6x )
+ind: 35
+( ( 10y - ( 31.0 * 65.0 ) ) + ( 84.0 + ( 6x + ( 10x - 9x ) ) ) )
+ind: 36
+( 5x + ( ( ( 9x + ( ( 7y * 9x ) * 64.0 ) ) + 8x ) + ( ( 7x * 4x ) * ( 10x + 10x ) ) ) )
+ind: 37
+( ( ( ( 84.0 * ( 44.0 + ( 9x - 2y ) ) ) - 2y ) * 28.0 ) * 6x )
+ind: 38
+( ( ( ( ( 7x - 6x ) * 49.0 ) - 94.0 ) + 8y ) + 91.0 )
+ind: 39
+( ( 7.0 + ( ( ( ( 7.0 + 3y ) + 89.0 ) - ( ( 1.0 - 2x ) - ( 6.0 - 63.0 ) ) ) - 83.0 ) ) * 48.0 )
+ind: 40
+( 7x * 6y )
+ind: 41
+( ( 7y + 17.0 ) + 3x )
+ind: 42
+( ( 1y * 7y ) - ( ( ( ( ( 90.0 - 6x ) + 59.0 ) - ( 76.0 * ( 84.0 + 4x ) ) ) * 43.0 ) - 42.0 ) )
+ind: 43
+( 69.0 - ( ( ( ( ( 7y - 85.0 ) - 9y ) - ( ( 19.0 + 93.0 ) * ( 8x - 95.0 ) ) ) * ( 3x + ( 27.0 - 28.0 ) ) ) * 46.0 ) )
+ind: 44
+( ( 15.0 * 23.0 ) + ( ( ( 79.0 - 6y ) * ( 54.0 + ( ( 1x * 1x ) + 9y ) ) ) * 88.0 ) )
+ind: 45
+( ( ( ( 22.0 * ( 90.0 - ( 9y - 100.0 ) ) ) + ( ( 49.0 + ( 8y - 6x ) ) + 1y ) ) - 2x ) * ( 5x * 4x ) )
+ind: 46
+( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+ind: 47
+( ( ( 83.0 - 9x ) - ( 33.0 + ( ( ( 26.0 - 49.0 ) + ( 31.0 - 23.0 ) ) + 57.0 ) ) ) + 8y )
+ind: 48
+( 46.0 * ( ( ( ( 36.0 * 1y ) - ( ( 9x + 8y ) - 2y ) ) + 74.0 ) - 4y ) )
+ind: 49
+( ( 40.0 - ( ( 27.0 + ( ( 8.0 + 8x ) - 96.0 ) ) - 47.0 ) ) * ( 2x - ( ( ( ( 2y + 10y ) - ( 18.0 * 74.0 ) ) + ( ( 9x + 8y ) - 6y ) ) * 3x ) ) )
+ind: 50
+( ( 71.0 - ( ( ( 8y + 4x ) + 1y ) + ( ( 9y - 3x ) - 76.0 ) ) ) * 64.0 )
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( 69.0 - ( ( ( ( ( 7y - 85.0 ) - 9y ) - ( ( 19.0 + 93.0 ) * ( 8x - 95.0 ) ) ) * ( 3x + ( 27.0 - 28.0 ) ) ) * 46.0 ) )
+Fitness = 685216000.0
+Avg Fitness = 14078536.6999
+Duplicated = 0
+============================================================================
+Evaluate Gen  1
+New Population 71
+Better than Dads 7
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( 5x + ( ( ( 9x + ( ( 7y * 9x ) * 64.0 ) ) + 8x ) + ( ( 7x * 4x ) * ( 10x + 10x ) ) ) )
+Fitness = 65520.1031844
+Avg Fitness = 10038.3120704
+Duplicated = 0
+============================================================================
+Evaluate Gen  2
+New Population 69
+Better than Dads 3
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( ( ( ( ( 69.0 - 3x ) + 7x ) - 87.0 ) - ( ( 9y + ( 3y - 7x ) ) + 72.0 ) ) * 4y )
+Fitness = 9155.25783007
+Avg Fitness = 2351.9951011
+Duplicated = 3
+============================================================================
+Evaluate Gen  3
+New Population 75
+Better than Dads 5
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( 49.0 + ( 8y - 6x ) )
+Fitness = 2450.0
+Avg Fitness = 791.755874284
+Duplicated = 5
+============================================================================
+Evaluate Gen  4
+New Population 77
+Better than Dads 10
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( ( 7y + 17.0 ) + 3x )
+Fitness = 850.0
+Avg Fitness = 432.468054185
+Duplicated = 7
+============================================================================
+Evaluate Gen  5
+New Population 79
+Better than Dads 9
+Best Ind: ( ( ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) + 95.0 ) - 3x ) - 1x )
+Fitness = 31.8519422198
+Worst Ind: ( ( ( ( 5x + 93.0 ) + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - ( 9y * 3x ) )
+Fitness = 429.152710784
+Avg Fitness = 284.306584867
+Duplicated = 6
+============================================================================
+Evaluate Gen  6
+New Population 73
+Better than Dads 2
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 45.0 - ( ( 10x - ( 91.0 - ( 2x + 7.0 ) ) ) + ( ( 7.0 - 3y ) - 6x ) ) ) - ( 10y + 1x ) )
+Fitness = 319.890896877
+Avg Fitness = 245.171666231
+Duplicated = 2
+============================================================================
+Evaluate Gen  7
+New Population 75
+Better than Dads 7
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 7.0 - 3y ) * 6x )
+Fitness = 286.10180719
+Avg Fitness = 222.917852237
+Duplicated = 6
+============================================================================
+Evaluate Gen  8
+New Population 74
+Better than Dads 5
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 2.0 + 93.0 ) + 60.0 ) + ( 14.0 - 48.0 ) ) - ( 1x - 8y ) )
+Fitness = 254.312717502
+Avg Fitness = 215.437476143
+Duplicated = 3
+============================================================================
+Evaluate Gen  9
+New Population 81
+Better than Dads 8
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 6x + 1y ) - 5.0 )
+Fitness = 250.0
+Avg Fitness = 205.019934757
+Duplicated = 4
+============================================================================
+Evaluate Gen  10
+New Population 79
+Better than Dads 7
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 9y * 3x ) - ( ( 10x - ( 30.0 - ( 2x + 7.0 ) ) ) + ( ( 7.0 - 3y ) - 6x ) ) ) - 5.0 )
+Fitness = 250.0
+Avg Fitness = 177.943185001
+Duplicated = 8
+============================================================================
+Evaluate Gen  11
+New Population 80
+Better than Dads 5
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( 5.0 - ( 6x + 1y ) )
+Fitness = 193.596787764
+Avg Fitness = 144.552126493
+Duplicated = 9
+============================================================================
+Evaluate Gen  12
+New Population 79
+Better than Dads 5
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 2.0 + ( 6x + 1y ) ) + 6x ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - ( 7x - 6x ) )
+Fitness = 191.111653319
+Avg Fitness = 124.206232999
+Duplicated = 6
+============================================================================
+Evaluate Gen  13
+New Population 82
+Better than Dads 6
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 2.0 + 10y ) + 9y ) + ( ( ( ( 93.0 * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - ( 7x - 6x ) )
+Fitness = 191.111653319
+Avg Fitness = 89.1577831014
+Duplicated = 5
+============================================================================
+Evaluate Gen  14
+New Population 82
+Better than Dads 7
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 1x - 8y ) - 2x ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 61.1481867582
+Duplicated = 8
+============================================================================
+Evaluate Gen  15
+New Population 77
+Better than Dads 5
+Best Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( 90.0 - 85.0 ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 60.5061197112
+Duplicated = 9
+============================================================================
+Evaluate Gen  16
+New Population 80
+Better than Dads 1
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( ( 2y * 8y ) - 85.0 ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 58.5899749755
+Duplicated = 8
+============================================================================
+Evaluate Gen  17
+New Population 79
+Better than Dads 4
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( ( 2y * 8y ) - 85.0 ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 56.038048446
+Duplicated = 6
+============================================================================
+Evaluate Gen  18
+New Population 80
+Better than Dads 4
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( ( 6x - 6x ) - 85.0 ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 52.8453119201
+Duplicated = 5
+============================================================================
+Evaluate Gen  19
+New Population 78
+Better than Dads 8
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( 90.0 - 85.0 ) ) + ( ( 6x * 55.0 ) * ( 2y * 8y ) ) ) - 2x )
+Fitness = 63.7038844396
+Avg Fitness = 47.7402018105
+Duplicated = 6
+============================================================================
+Evaluate Gen  20
+New Population 76
+Better than Dads 10
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 1y - 85.0 ) - ( 4x * 1y ) )
+Fitness = 63.5781793755
+Avg Fitness = 42.6313205489
+Duplicated = 7
+============================================================================
+Evaluate Gen  21
+New Population 82
+Better than Dads 8
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 2y * ( 7x - ( 90.0 * 1y ) ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) - ( ( 1y - 85.0 ) - 1x ) )
+Fitness = 31.8519422198
+Avg Fitness = 31.844399916
+Duplicated = 6
+============================================================================
+Evaluate Gen  22
+New Population 77
+Better than Dads 1
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 22.0 * ( 90.0 - 85.0 ) ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 1x )
+Fitness = 31.8519422198
+Avg Fitness = 31.8431428653
+Duplicated = 6
+============================================================================
+Evaluate Gen  23
+New Population 78
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 6x + 1y ) - 1x )
+Fitness = 31.8519422198
+Avg Fitness = 31.8393717134
+Duplicated = 6
+============================================================================
+Evaluate Gen  24
+New Population 80
+Better than Dads 4
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 1y - 85.0 ) - 1x )
+Fitness = 31.8519422198
+Avg Fitness = 31.8318294095
+Duplicated = 5
+============================================================================
+Evaluate Gen  25
+New Population 82
+Better than Dads 8
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 4x * 1y ) - ( ( 1y - 85.0 ) - 1x ) )
+Fitness = 31.8519422198
+Avg Fitness = 31.8217730044
+Duplicated = 5
+============================================================================
+Evaluate Gen  26
+New Population 78
+Better than Dads 7
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 2y * ( 7x - 6x ) ) + ( 45.0 + ( ( 49.0 + 21.0 ) + 1y ) ) ) - ( ( 1y - 85.0 ) - 1x ) ) - ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) )
+Fitness = 31.8519422198
+Avg Fitness = 31.8079454474
+Duplicated = 6
+============================================================================
+Evaluate Gen  27
+New Population 79
+Better than Dads 7
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 6x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( 22.0 * ( 90.0 - 85.0 ) ) + ( 4x * 1y ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  28
+New Population 80
+Better than Dads 1
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( 4x * 1y ) * 49.0 ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  29
+New Population 80
+Better than Dads 2
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  30
+New Population 81
+Better than Dads 3
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  31
+New Population 78
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 1x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  32
+New Population 77
+Better than Dads 3
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  33
+New Population 85
+Better than Dads 8
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  34
+New Population 87
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 40.0 - ( 4y - 5x ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  35
+New Population 79
+Better than Dads 6
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 3x + 60.0 ) + ( ( 1y * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  36
+New Population 80
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 1x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  37
+New Population 76
+Better than Dads 9
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 1x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  38
+New Population 82
+Better than Dads 10
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 4x * 1y ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  39
+New Population 81
+Better than Dads 7
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 6x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  40
+New Population 82
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 3x + 60.0 ) + ( ( 1y * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  41
+New Population 82
+Better than Dads 9
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 40.0 - ( 4y - 5x ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  42
+New Population 81
+Better than Dads 5
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 9y - 5x ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 3x ) - ( ( ( ( 1x - 8y ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 1y ) - 1y ) )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  43
+New Population 78
+Better than Dads 4
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  44
+New Population 82
+Better than Dads 7
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( 1y - 85.0 ) - 1x ) + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  45
+New Population 82
+Better than Dads 6
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( 6x - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  46
+New Population 82
+Better than Dads 10
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( ( ( 1y - 85.0 ) - 1x ) * 1y ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) - 1x ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  47
+New Population 81
+Better than Dads 7
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 3x + 60.0 ) + 45.0 ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  48
+New Population 77
+Better than Dads 3
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 4x * 1y ) - ( 6x - ( 79.0 - ( ( 1y - 85.0 ) - 1x ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  49
+New Population 81
+Better than Dads 2
+Best Ind: ( ( ( 6x + ( ( 49.0 + 21.0 ) + 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Worst Ind: ( ( ( 3x * 1y ) - ( 6x - ( 79.0 - ( ( 1y - 85.0 ) - 1x ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.7890896877
+Duplicated = 11
+============================================================================
+Evaluate Gen  50
+New Population 77
+Better than Dads 11
+Best Ind: ( ( ( ( 1y - 85.0 ) - 1x ) + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) )
+Fitness = 15.8945448439
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.4711987909
+Duplicated = 10
+============================================================================
+Evaluate Gen  51
+New Population 81
+Better than Dads 3
+Best Ind: ( ( ( ( 1y - 85.0 ) - 1x ) + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) )
+Fitness = 15.8945448439
+Worst Ind: ( ( 10x + ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.4711987909
+Duplicated = 10
+============================================================================
+Evaluate Gen  52
+New Population 77
+Better than Dads 6
+Best Ind: ( ( ( ( 1y - 85.0 ) - 1x ) + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) )
+Fitness = 15.8945448439
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 6x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.4711987909
+Duplicated = 10
+============================================================================
+Evaluate Gen  53
+New Population 81
+Better than Dads 7
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( 4x - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.0467842813
+Duplicated = 10
+============================================================================
+Evaluate Gen  54
+New Population 82
+Better than Dads 10
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 10x + ( ( ( ( 6x * 6x ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 31.0467842813
+Duplicated = 10
+============================================================================
+Evaluate Gen  55
+New Population 79
+Better than Dads 5
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.6223697718
+Duplicated = 9
+============================================================================
+Evaluate Gen  56
+New Population 80
+Better than Dads 6
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( 4x * 1y ) - ( 6x - ( 79.0 - ( ( 1y - 85.0 ) - 1x ) ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.6223697718
+Duplicated = 9
+============================================================================
+Evaluate Gen  57
+New Population 80
+Better than Dads 6
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( 3x + 60.0 ) + 45.0 ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.6223697718
+Duplicated = 9
+============================================================================
+Evaluate Gen  58
+New Population 79
+Better than Dads 4
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.6223697718
+Duplicated = 9
+============================================================================
+Evaluate Gen  59
+New Population 83
+Better than Dads 7
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 4x * 1y ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.6223697718
+Duplicated = 9
+============================================================================
+Evaluate Gen  60
+New Population 78
+Better than Dads 1
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 85.0 + ( ( 4x * 1y ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 30.1686970812
+Duplicated = 9
+============================================================================
+Evaluate Gen  61
+New Population 79
+Better than Dads 6
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( ( 1x - 8y ) + ( ( 49.0 + 21.0 ) + 1y ) ) - 1y ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 29.7150243906
+Duplicated = 7
+============================================================================
+Evaluate Gen  62
+New Population 81
+Better than Dads 7
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( 6x - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 29.0792425968
+Duplicated = 5
+============================================================================
+Evaluate Gen  63
+New Population 75
+Better than Dads 7
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( 3x + 60.0 ) + ( ( ( ( 5x * 55.0 ) * ( 2y * 8y ) ) * 39.0 ) * ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 28.3076790093
+Duplicated = 5
+============================================================================
+Evaluate Gen  64
+New Population 78
+Better than Dads 8
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 2y * ( 40.0 - ( 4y - 5x ) ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 27.3540063187
+Duplicated = 5
+============================================================================
+Evaluate Gen  65
+New Population 78
+Better than Dads 7
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 40.0 - ( 4y - 5x ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 25.8413968658
+Duplicated = 3
+============================================================================
+Evaluate Gen  66
+New Population 79
+Better than Dads 11
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( 40.0 - ( 4y - 5x ) ) - 1y )
+Fitness = 31.7890896877
+Avg Fitness = 23.4803787939
+Duplicated = 6
+============================================================================
+Evaluate Gen  67
+New Population 81
+Better than Dads 10
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( 6x + ( 4x * 1y ) ) - 2x ) * 1y )
+Fitness = 31.7890896877
+Avg Fitness = 19.1856949824
+Duplicated = 8
+============================================================================
+Evaluate Gen  68
+New Population 86
+Better than Dads 14
+Best Ind: ( ( 40.0 - ( 4y - 5x ) ) - ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) )
+Fitness = 10.5683642125
+Worst Ind: ( ( ( ( ( ( 4x * 1y ) - 1y ) - 85.0 ) - 1x ) + ( ( 4x * 1y ) * ( 1x - 63.0 ) ) ) - ( 1x * 1y ) )
+Fitness = 15.8945448439
+Avg Fitness = 14.8343468815
+Duplicated = 10
+============================================================================
+Evaluate Gen  69
+New Population 80
+Better than Dads 9
+Best Ind: ( ( 1x * 1y ) * ( 1x * 1y ) )
+Fitness = 6.25
+Worst Ind: ( ( ( ( 1y - ( 6x * 49.0 ) ) * 1y ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) - 1x ) ) * 1y )
+Fitness = 15.8945448439
+Avg Fitness = 13.9209851885
+Duplicated = 11
+============================================================================
+Evaluate Gen  70
+New Population 81
+Better than Dads 12
+Best Ind: ( ( 1x * 1y ) * ( 1x * 1y ) )
+Fitness = 6.25
+Worst Ind: ( 1y * ( ( 1y - 85.0 ) - 1x ) )
+Fitness = 15.8945448439
+Avg Fitness = 12.9698299207
+Duplicated = 12
+============================================================================
+Evaluate Gen  71
+New Population 78
+Better than Dads 8
+Best Ind: ( ( 1x * 1y ) * ( 1x * 1y ) )
+Fitness = 6.25
+Worst Ind: ( ( ( ( 40.0 - ( 4y - 5x ) ) - 1y ) - 1y ) * 1x )
+Fitness = 15.8945448439
+Avg Fitness = 11.4519036472
+Duplicated = 14
+============================================================================
+Evaluate Gen  72
+New Population 84
+Better than Dads 17
+Best Ind: ( ( ( ( 1y - 1y ) * 1y ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) - ( 1x * 1y ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 4.24419871646
+Worst Ind: ( ( 1x * 1y ) * 1y )
+Fitness = 10.6313412611
+Avg Fitness = 9.93165492293
+Duplicated = 16
+============================================================================
+Evaluate Gen  73
+New Population 85
+Better than Dads 12
+Best Ind: ( ( ( ( ( 40.0 - ( 4y - 5x ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) * 1x ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 2.65259068441
+Worst Ind: ( ( ( ( 1y - 1x ) * 1y ) - ( ( ( 40.0 - ( 4y - 5x ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * 1y )
+Fitness = 10.6313412611
+Avg Fitness = 8.98372606053
+Duplicated = 13
+============================================================================
+Evaluate Gen  74
+New Population 75
+Better than Dads 10
+Best Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 1y - 1x ) * 1y ) - 63.0 ) - ( 1x * 1y ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) )
+Fitness = 2.42521766756
+Worst Ind: ( ( ( ( ( 1y - ( 1x - 1x ) ) - 1x ) * 1y ) - ( ( ( ( 1y - 85.0 ) - 1x ) * 1y ) - 1x ) ) * ( 1x * 1y ) )
+Fitness = 10.5683642125
+Avg Fitness = 8.59507883124
+Duplicated = 14
+============================================================================
+Evaluate Gen  75
+New Population 82
+Better than Dads 18
+Best Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 1y - 1x ) * 1y ) - 63.0 ) - ( 1x * 1y ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) )
+Fitness = 2.42521766756
+Worst Ind: ( ( ( ( ( 1y - ( 1x - 1x ) ) - 1x ) * 1y ) - ( ( ( ( 1y - 85.0 ) - 1x ) * 1y ) - 1x ) ) * ( 1x * 1y ) )
+Fitness = 10.5683642125
+Avg Fitness = 7.88831526711
+Duplicated = 12
+============================================================================
+Evaluate Gen  76
+New Population 90
+Better than Dads 20
+Best Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 1y - 1x ) * 1y ) - 63.0 ) - ( 1x * 1y ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) )
+Fitness = 2.42521766756
+Worst Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 1y - 1x ) * 1y ) - 63.0 ) - ( 1x * 1y ) ) ) * ( ( 1y - 85.0 ) - 1x ) )
+Fitness = 10.5683642125
+Avg Fitness = 6.18750860221
+Duplicated = 14
+============================================================================
+Evaluate Gen  77
+New Population 87
+Better than Dads 19
+Best Ind: ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 8y ) - ( ( 1x * 1y ) * ( 1x * 1y ) ) ) )
+Fitness = 1.81885452916
+Worst Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) - 1x ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 6.25
+Avg Fitness = 4.79689695009
+Duplicated = 13
+============================================================================
+Evaluate Gen  78
+New Population 82
+Better than Dads 14
+Best Ind: ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1x ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 1.171875
+Worst Ind: ( ( 1x * 1y ) * ( 1x * 1y ) )
+Fitness = 6.25
+Avg Fitness = 3.90097433257
+Duplicated = 9
+============================================================================
+Evaluate Gen  79
+New Population 87
+Better than Dads 24
+Best Ind: ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1x ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 1.171875
+Worst Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * 1y ) * ( 1x * 1y ) )
+Fitness = 4.24419871646
+Avg Fitness = 3.10180297416
+Duplicated = 6
+============================================================================
+Evaluate Gen  80
+New Population 75
+Better than Dads 8
+Best Ind: ( ( ( 1x * 1y ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.795714855936
+Worst Ind: ( ( 1x * 1y ) * ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( 1x * 1y ) ) * 1y ) )
+Fitness = 4.24419871646
+Avg Fitness = 2.60121300491
+Duplicated = 4
+============================================================================
+Evaluate Gen  81
+New Population 76
+Better than Dads 18
+Best Ind: ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.244140625
+Worst Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * 1y ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 63.0 ) - ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 3.125
+Avg Fitness = 2.18396107648
+Duplicated = 2
+============================================================================
+Evaluate Gen  82
+New Population 81
+Better than Dads 13
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( ( 1y - 85.0 ) - ( 4x * 1y ) ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) - ( ( ( ( 3x + 3x ) + ( 92.0 - 90.0 ) ) - 1y ) - ( ( 1x * 1y ) * 1x ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 2.65259068441
+Avg Fitness = 1.91829199226
+Duplicated = 5
+============================================================================
+Evaluate Gen  83
+New Population 80
+Better than Dads 21
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( 4x * ( ( 1y - 1x ) * 1y ) ) - ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( 1x * 1y ) )
+Fitness = 2.65259068441
+Avg Fitness = 1.79160874419
+Duplicated = 9
+============================================================================
+Evaluate Gen  84
+New Population 77
+Better than Dads 11
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) - 1x ) * 1y ) * 1y ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 2.42521766756
+Avg Fitness = 1.47008668089
+Duplicated = 10
+============================================================================
+Evaluate Gen  85
+New Population 79
+Better than Dads 20
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( 1x * 1y ) * 1y ) * ( ( ( 40.0 - ( 4y - 5x ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * ( 1x * 1y ) )
+Fitness = 1.81885452916
+Avg Fitness = 1.28634722043
+Duplicated = 10
+============================================================================
+Evaluate Gen  86
+New Population 79
+Better than Dads 14
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( ( ( 1y - 85.0 ) - 1x ) * 1y ) - ( 4y - ( 3x + 3x ) ) ) - ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 8y ) - ( ( 1y - 85.0 ) - 1x ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 1.81885452916
+Avg Fitness = 1.12155453518
+Duplicated = 12
+============================================================================
+Evaluate Gen  87
+New Population 76
+Better than Dads 12
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1y - 85.0 ) - 1x ) * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 1.32623131715
+Avg Fitness = 0.927286281447
+Duplicated = 12
+============================================================================
+Evaluate Gen  88
+New Population 70
+Better than Dads 11
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( ( 1x - 1y ) - ( ( 1y - 1x ) - ( 4x * 1y ) ) ) - ( ( ( 1x * 1y ) * 1x ) * 1y ) ) * 1x ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 1.171875
+Avg Fitness = 0.84291366839
+Duplicated = 14
+============================================================================
+Evaluate Gen  89
+New Population 80
+Better than Dads 16
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1x ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 1.171875
+Avg Fitness = 0.675493913706
+Duplicated = 14
+============================================================================
+Evaluate Gen  90
+New Population 76
+Better than Dads 6
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( 1x * 1y ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.795714855936
+Avg Fitness = 0.545646006344
+Duplicated = 16
+============================================================================
+Evaluate Gen  91
+New Population 75
+Better than Dads 18
+Best Ind: ( ( ( ( ( 4x * 1y ) - 1x ) * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.1220703125
+Worst Ind: ( ( ( 1x * 1y ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.795714855936
+Avg Fitness = 0.4883658616
+Duplicated = 11
+============================================================================
+Evaluate Gen  92
+New Population 80
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.118717507598
+Worst Ind: ( ( ( ( ( 1x - 1y ) - ( ( 4y - 1y ) - ( 4x * 1y ) ) ) - ( ( ( 1x * 1y ) * 1x ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.5859375
+Avg Fitness = 0.40083226792
+Duplicated = 12
+============================================================================
+Evaluate Gen  93
+New Population 81
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.118717507598
+Worst Ind: ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.530516461212
+Avg Fitness = 0.358004162296
+Duplicated = 15
+============================================================================
+Evaluate Gen  94
+New Population 73
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.118717507598
+Worst Ind: ( ( ( 1x * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * 1y ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.44094876913
+Avg Fitness = 0.309683813245
+Duplicated = 14
+============================================================================
+Evaluate Gen  95
+New Population 83
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.367457814989
+Avg Fitness = 0.267528146151
+Duplicated = 10
+============================================================================
+Evaluate Gen  96
+New Population 73
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( 1x * 1x ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) - 1y ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.367456769353
+Avg Fitness = 0.231262483068
+Duplicated = 13
+============================================================================
+Evaluate Gen  97
+New Population 81
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) - ( 1y - 85.0 ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.265258767188
+Avg Fitness = 0.190940149381
+Duplicated = 14
+============================================================================
+Evaluate Gen  98
+New Population 71
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1x ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) )
+Fitness = 0.244140625
+Avg Fitness = 0.168362510038
+Duplicated = 13
+============================================================================
+Evaluate Gen  99
+New Population 80
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( 1x * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) - ( 1y - 85.0 ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.244140625
+Avg Fitness = 0.141811515386
+Duplicated = 13
+============================================================================
+Evaluate Gen  100
+New Population 85
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) - ( 1y - 85.0 ) ) - 1y ) - ( ( ( 4x * 1y ) - 1x ) * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.16959568628
+Avg Fitness = 0.11788236081
+Duplicated = 17
+============================================================================
+Evaluate Gen  101
+New Population 76
+Better than Dads 13
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( 1y * 1y ) * ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x - 8y ) - ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.151576664912
+Avg Fitness = 0.0997907315811
+Duplicated = 21
+============================================================================
+Evaluate Gen  102
+New Population 81
+Better than Dads 21
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( 1y * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.1220703125
+Avg Fitness = 0.0850155965854
+Duplicated = 20
+============================================================================
+Evaluate Gen  103
+New Population 75
+Better than Dads 10
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( ( ( 1x * 1y ) * 1x ) * 1x ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.113682102275
+Avg Fitness = 0.0687775986194
+Duplicated = 17
+============================================================================
+Evaluate Gen  104
+New Population 72
+Better than Dads 10
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( ( 4x * 1y ) - 1x ) * 1y ) ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0904510274184
+Avg Fitness = 0.0587976389533
+Duplicated = 18
+============================================================================
+Evaluate Gen  105
+New Population 77
+Better than Dads 15
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1x ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0791446396958
+Avg Fitness = 0.0479315654936
+Duplicated = 14
+============================================================================
+Evaluate Gen  106
+New Population 71
+Better than Dads 10
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( 1x * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0568410611685
+Avg Fitness = 0.0373557397736
+Duplicated = 12
+============================================================================
+Evaluate Gen  107
+New Population 79
+Better than Dads 21
+Best Ind: ( ( ( ( 1x * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Worst Ind: ( ( ( ( 1x * 1y ) * ( ( ( 1y * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0568410411067
+Avg Fitness = 0.0321772420338
+Duplicated = 11
+============================================================================
+Evaluate Gen  108
+New Population 76
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( 1y * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0419000985701
+Avg Fitness = 0.0272619322953
+Duplicated = 10
+============================================================================
+Evaluate Gen  109
+New Population 78
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( 1x * 1y ) * ( ( ( 1x * 1y ) * 1y ) * 1x ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0372445405164
+Avg Fitness = 0.0246294844722
+Duplicated = 10
+============================================================================
+Evaluate Gen  110
+New Population 81
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * 1x ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0372445405164
+Avg Fitness = 0.020422321404
+Duplicated = 13
+============================================================================
+Evaluate Gen  111
+New Population 80
+Better than Dads 23
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( 1x * 1y ) * 1x ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0267028808594
+Avg Fitness = 0.0174752361897
+Duplicated = 13
+============================================================================
+Evaluate Gen  112
+New Population 75
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * ( 1x * 1y ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0252626893792
+Avg Fitness = 0.0165300549736
+Duplicated = 15
+============================================================================
+Evaluate Gen  113
+New Population 74
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * 1x ) ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0196023899213
+Avg Fitness = 0.0141718663887
+Duplicated = 15
+============================================================================
+Evaluate Gen  114
+New Population 76
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * 1x ) ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0196023899213
+Avg Fitness = 0.0136857993342
+Duplicated = 15
+============================================================================
+Evaluate Gen  115
+New Population 70
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00574152031357
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * 1y ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0196023899213
+Avg Fitness = 0.0131482265337
+Duplicated = 14
+============================================================================
+Evaluate Gen  116
+New Population 77
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( 1x * 1y ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0176421512351
+Avg Fitness = 0.0116888765835
+Duplicated = 12
+============================================================================
+Evaluate Gen  117
+New Population 72
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0146865844727
+Avg Fitness = 0.0104297398936
+Duplicated = 11
+============================================================================
+Evaluate Gen  118
+New Population 67
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x - 1y ) - 1y ) ) * ( 1x * 1y ) ) * ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) )
+Fitness = 0.0126313450335
+Avg Fitness = 0.00985973934378
+Duplicated = 11
+============================================================================
+Evaluate Gen  119
+New Population 79
+Better than Dads 28
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1y * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0126313450335
+Avg Fitness = 0.00968104228896
+Duplicated = 12
+============================================================================
+Evaluate Gen  120
+New Population 76
+Better than Dads 23
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1y * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0126313450335
+Avg Fitness = 0.00937936552064
+Duplicated = 12
+============================================================================
+Evaluate Gen  121
+New Population 74
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1x ) ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.0120162963867
+Avg Fitness = 0.00886274625688
+Duplicated = 18
+============================================================================
+Evaluate Gen  122
+New Population 70
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * 1y ) * ( ( 1y - 1y ) - 1y ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0112013656594
+Avg Fitness = 0.00839930277042
+Duplicated = 19
+============================================================================
+Evaluate Gen  123
+New Population 79
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * 1y ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00401788114318
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1y ) ) * ( 1x * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( 1x * 1y ) * 1y ) * 1y ) )
+Fitness = 0.0092411270061
+Avg Fitness = 0.00755119930742
+Duplicated = 22
+============================================================================
+Evaluate Gen  124
+New Population 77
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 4x * 1y ) - 1x ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0092411270061
+Avg Fitness = 0.00704203983752
+Duplicated = 20
+============================================================================
+Evaluate Gen  125
+New Population 68
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( 1x * ( 1x * 1y ) ) ) * ( ( ( 1y * 1y ) * 1y ) * ( ( 4x * 1y ) - 1x ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00840102426185
+Avg Fitness = 0.00675362106521
+Duplicated = 22
+============================================================================
+Evaluate Gen  126
+New Population 75
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 4x * 1y ) - 1x ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00840102426185
+Avg Fitness = 0.00630922725423
+Duplicated = 23
+============================================================================
+Evaluate Gen  127
+New Population 74
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( ( 1x * 1x ) * ( 1x * 1y ) ) * ( ( 4x * 1y ) - 1x ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.008401024229
+Avg Fitness = 0.0057315891735
+Duplicated = 25
+============================================================================
+Evaluate Gen  128
+New Population 75
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x - 1y ) - 1y ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.0068898247199
+Avg Fitness = 0.00519336847358
+Duplicated = 26
+============================================================================
+Evaluate Gen  129
+New Population 82
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( 1y * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00600814819336
+Avg Fitness = 0.0047298166397
+Duplicated = 28
+============================================================================
+Evaluate Gen  130
+New Population 74
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( 1x * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00574152031357
+Avg Fitness = 0.00443356939227
+Duplicated = 30
+============================================================================
+Evaluate Gen  131
+New Population 73
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( 1x * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00574152031357
+Avg Fitness = 0.0040823942299
+Duplicated = 28
+============================================================================
+Evaluate Gen  132
+New Population 73
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Worst Ind: ( ( ( ( ( 1y * 1y ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00438314308332
+Avg Fitness = 0.00376566404605
+Duplicated = 30
+============================================================================
+Evaluate Gen  133
+New Population 79
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1x ) * ( 1x * 1x ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00401788117853
+Avg Fitness = 0.00359343932322
+Duplicated = 33
+============================================================================
+Evaluate Gen  134
+New Population 75
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00401788114318
+Avg Fitness = 0.00344876326746
+Duplicated = 35
+============================================================================
+Evaluate Gen  135
+New Population 73
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00401788114318
+Avg Fitness = 0.00326997432022
+Duplicated = 32
+============================================================================
+Evaluate Gen  136
+New Population 73
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00401788114318
+Avg Fitness = 0.00312529826658
+Duplicated = 32
+============================================================================
+Evaluate Gen  137
+New Population 85
+Better than Dads 27
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00401788114318
+Avg Fitness = 0.00289705028545
+Duplicated = 32
+============================================================================
+Evaluate Gen  138
+New Population 77
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00325441360474
+Avg Fitness = 0.00266880230432
+Duplicated = 36
+============================================================================
+Evaluate Gen  139
+New Population 83
+Better than Dads 25
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00287076013712
+Avg Fitness = 0.00256223049411
+Duplicated = 38
+============================================================================
+Evaluate Gen  140
+New Population 74
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1y ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00287076013712
+Avg Fitness = 0.00249633781941
+Duplicated = 39
+============================================================================
+Evaluate Gen  141
+New Population 64
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1y * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00287076013712
+Avg Fitness = 0.00245718401555
+Duplicated = 38
+============================================================================
+Evaluate Gen  142
+New Population 75
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00275373458862
+Avg Fitness = 0.0023653068085
+Duplicated = 39
+============================================================================
+Evaluate Gen  143
+New Population 70
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00275373458862
+Avg Fitness = 0.00228600594985
+Duplicated = 37
+============================================================================
+Evaluate Gen  144
+New Population 64
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00275373458862
+Avg Fitness = 0.0022067050912
+Duplicated = 36
+============================================================================
+Evaluate Gen  145
+New Population 72
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * 1x ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00275373458862
+Avg Fitness = 0.00205774628763
+Duplicated = 37
+============================================================================
+Evaluate Gen  146
+New Population 66
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00208929818459
+Avg Fitness = 0.0019357964494
+Duplicated = 39
+============================================================================
+Evaluate Gen  147
+New Population 76
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295859
+Avg Fitness = 0.00191651062184
+Duplicated = 42
+============================================================================
+Evaluate Gen  148
+New Population 74
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295859
+Avg Fitness = 0.00191651062162
+Duplicated = 42
+============================================================================
+Evaluate Gen  149
+New Population 70
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  150
+New Population 72
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  151
+New Population 70
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  152
+New Population 72
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  153
+New Population 82
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  154
+New Population 70
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  155
+New Population 70
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  156
+New Population 76
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  157
+New Population 74
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  158
+New Population 70
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  159
+New Population 74
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  160
+New Population 72
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  161
+New Population 68
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  162
+New Population 72
+Better than Dads 7
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  163
+New Population 70
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  164
+New Population 70
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  165
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  166
+New Population 68
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  167
+New Population 68
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  168
+New Population 70
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  169
+New Population 78
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  170
+New Population 62
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  171
+New Population 76
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  172
+New Population 70
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  173
+New Population 80
+Better than Dads 26
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  174
+New Population 76
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  175
+New Population 70
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  176
+New Population 74
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  177
+New Population 70
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  178
+New Population 72
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  179
+New Population 68
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  180
+New Population 70
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  181
+New Population 66
+Better than Dads 5
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  182
+New Population 70
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  183
+New Population 68
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  184
+New Population 74
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  185
+New Population 78
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  186
+New Population 70
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  187
+New Population 78
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  188
+New Population 72
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  189
+New Population 72
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  190
+New Population 74
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  191
+New Population 78
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  192
+New Population 74
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  193
+New Population 80
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  194
+New Population 76
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  195
+New Population 70
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  196
+New Population 80
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  197
+New Population 70
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  198
+New Population 74
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  199
+New Population 74
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  200
+New Population 72
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  201
+New Population 76
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  202
+New Population 66
+Better than Dads 7
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  203
+New Population 78
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  204
+New Population 76
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  205
+New Population 68
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  206
+New Population 72
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  207
+New Population 68
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  208
+New Population 72
+Better than Dads 22
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  209
+New Population 82
+Better than Dads 28
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  210
+New Population 78
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  211
+New Population 78
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  212
+New Population 70
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  213
+New Population 64
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  214
+New Population 68
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  215
+New Population 80
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  216
+New Population 66
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  217
+New Population 76
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  218
+New Population 78
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  219
+New Population 77
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  220
+New Population 72
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  221
+New Population 68
+Better than Dads 5
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  222
+New Population 70
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  223
+New Population 72
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  224
+New Population 72
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  225
+New Population 74
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  226
+New Population 76
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  227
+New Population 72
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  228
+New Population 74
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  229
+New Population 72
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  230
+New Population 70
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  231
+New Population 66
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  232
+New Population 78
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  233
+New Population 74
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  234
+New Population 70
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  235
+New Population 76
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  236
+New Population 74
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  237
+New Population 72
+Better than Dads 7
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  238
+New Population 76
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  239
+New Population 64
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  240
+New Population 78
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  241
+New Population 76
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  242
+New Population 72
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  243
+New Population 72
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  244
+New Population 66
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  245
+New Population 70
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  246
+New Population 62
+Better than Dads 6
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  247
+New Population 76
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  248
+New Population 76
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  249
+New Population 70
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  250
+New Population 64
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  251
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  252
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  253
+New Population 76
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  254
+New Population 76
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  255
+New Population 70
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  256
+New Population 72
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  257
+New Population 72
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  258
+New Population 72
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  259
+New Population 66
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  260
+New Population 74
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  261
+New Population 78
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  262
+New Population 74
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  263
+New Population 66
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  264
+New Population 64
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  265
+New Population 70
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  266
+New Population 68
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  267
+New Population 76
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  268
+New Population 76
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  269
+New Population 66
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  270
+New Population 62
+Better than Dads 7
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  271
+New Population 70
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  272
+New Population 78
+Better than Dads 24
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  273
+New Population 66
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  274
+New Population 68
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  275
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  276
+New Population 70
+Better than Dads 9
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  277
+New Population 68
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  278
+New Population 70
+Better than Dads 11
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  279
+New Population 78
+Better than Dads 17
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  280
+New Population 70
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  281
+New Population 70
+Better than Dads 12
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  282
+New Population 66
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  283
+New Population 76
+Better than Dads 20
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  284
+New Population 70
+Better than Dads 15
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  285
+New Population 70
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  286
+New Population 68
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  287
+New Population 72
+Better than Dads 6
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  288
+New Population 72
+Better than Dads 16
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  289
+New Population 72
+Better than Dads 13
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  290
+New Population 68
+Better than Dads 10
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  291
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  292
+New Population 78
+Better than Dads 21
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  293
+New Population 64
+Better than Dads 8
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  294
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  295
+New Population 68
+Better than Dads 7
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  296
+New Population 74
+Better than Dads 19
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  297
+New Population 78
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  298
+New Population 78
+Better than Dads 18
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1x ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  299
+New Population 72
+Better than Dads 14
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1y * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1x ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44
+============================================================================
+Evaluate Gen  300
+New Population 78
+Better than Dads 23
+Best Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( 1x * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) ) * ( ( ( ( 1x * 1y ) * 1y ) * ( 1x * 1y ) ) * ( ( ( 4x * 1y ) - 1x ) * ( 1x * 1y ) ) ) ) * ( ( 1x * 1y ) * 1y ) )
+Fitness = 0.00132496622621
+Worst Ind: ( ( ( ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * ( 1x * 1y ) ) * ( ( 1x * 1y ) * 1y ) ) ) * ( ( 1x * 1y ) * ( 1x * 1y ) ) ) * ( ( ( 1x * 1y ) * 1y ) * ( ( ( ( 1x * 1y ) - 63.0 ) - 1x ) * ( 1x * 1y ) ) ) )
+Fitness = 0.00192858295583
+Avg Fitness = 0.00191651062123
+Duplicated = 44

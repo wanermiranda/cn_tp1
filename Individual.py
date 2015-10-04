@@ -145,11 +145,11 @@ class Tree:
         module = globals()
 
         if ((not is_terminal) or isinstance(parent, Tree)) and (parent_depth < self._max_depth - 1):
-            non_terminal = int(random.choice(range(self._non_terminals.__len__())))
+            non_terminal = random.choice(range(self._non_terminals.__len__()))
             non_terminal_class = module[self._non_terminals[non_terminal]]
             node = non_terminal_class(parent, children, mutating)
         else:
-            terminal = int(random.choice(range(self._terminals.__len__())))
+            terminal = random.choice(range(self._terminals.__len__()))
             terminal_class = module[self._terminals[terminal]]
             node = terminal_class(parent)
 
@@ -197,12 +197,12 @@ class Tree:
         return self._value
 
     def get_mutate_chance(self):
-        if self._mutation_nodes_reviewed > self._nodes:
-            self._mutate_chance = 1
-        else:
+        # if self._mutation_nodes_reviewed > self._nodes:
+        #     self._mutate_chance = 1
+        # else:
             # float(self._mutation_nodes_reviewed)
-            self._mutate_chance = 1.0/float(self._nodes)
-        self._mutation_nodes_reviewed += 1
+        self._mutate_chance = 0.10
+        # self._mutation_nodes_reviewed += 1
         return self._mutate_chance
 
     def mutate(self):
@@ -213,17 +213,10 @@ class Tree:
         if mutating:
             # print 'Choose ',  self._root
             self._root = self.gen_node_(self, self._root.get_children(), True)
-            # print 'Changed', self._root
-        else:
-            self._root.mutate()
-        if representation == str(self):
-            # print 'Not changing'
-            # print representation
-            # print self
-            self.mutate()
 
-        while self._depth < self._min_depth:
-            # print 'Deeper Mutation', self._depth
+            self._root.mutate()
+
+        if representation == str(self):
             self.mutate()
 
     def cross_over(self, target_node, new_node):
@@ -267,7 +260,6 @@ class Node:
         return self._id == target.get_id()
 
     def mutate(self):
-        mutated = False
         for pos in range(self._children.__len__()):
             chance = self._tree.get_mutate_chance()
             mutating = random.random() <= chance
@@ -277,15 +269,8 @@ class Node:
                 # print 'Choose ',  changing_node
                 # print 'Changed', node
                 self._children[pos] = node
-                mutated = True
-                return mutated
-
-        if not mutated:
-            for pos in range(self._children.__len__()):
-                mutated = self._children[pos].mutate()
-                if mutated:
-                    break
-        return mutated
+        for pos in range(self._children.__len__()):
+            self._children[pos].mutate()
 
     def cross_over(self, target_node, new_node):
         for pos in range(self._children.__len__()):
@@ -411,6 +396,28 @@ class IntTerminal(Terminal):
     def eval(self):
         return self._value
 
+class ArrayVariableFloatTerminal(Terminal):
+    def __init__(self, parent):
+        Terminal.__init__(self, parent)
+        self._individual = None
+        self._variables = ''
+        self.update_parent(parent)
+        self._multiplier = 1.0/float(random.randint(1, 10))
+        self._index = int(random.choice(range(self._variables.__len__())))
+
+    def update_parent(self, parent):
+        Node.update_parent(self, parent)
+        self._individual = self.get_tree().get_individual()
+        self._variables = self._individual.get_variables()
+
+    def __str__(self):
+        return str(self._multiplier) + self._variables[self._index]
+
+    def eval(self):
+        data_row = self._individual.get_data_row()
+        self._value = self._multiplier * data_row[self._index]
+
+        return self._value
 
 class ArrayVariableTerminal(Terminal):
     def __init__(self, parent):
