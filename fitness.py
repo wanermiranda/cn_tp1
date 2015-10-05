@@ -41,24 +41,15 @@ class Fitness(object):
 class MSEFitness(Fitness):
 
     def eval_individual(self, data, individual, target_fitness):
+        
         if individual.get_fitness() == 0.0:
             individual_fitness = 0.0
-            # avg = 0
-            # values = []
             for data_row in data:
                 if len(data_row) > 0:
-                    generated_value = individual.eval(data_row)
-                    # target_fitness = - math.pow(data_row[len(data_row)-1], 2)
-                    diff = (generated_value - target_fitness)
-                    # values.append(diff)
-                    # avg += abs(diff)
+                    target_value = target_fitness if target_fitness is not None else data_row[len(data_row)-1]                    
+                    generated_value = individual.eval(data_row)                    
+                    diff = (generated_value - target_value)
                     individual_fitness += math.fabs(diff)
-
-            # avg /= len(data)
-            # variance = 0
-            # for value in values:
-            #     variance += math.pow(value - avg, 2)
-            #+ math.sqrt(variance / len(data)
             koza = math.pow(individual_fitness, 2) / len(data)
 
             individual.set_fitness(koza)

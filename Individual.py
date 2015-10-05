@@ -251,13 +251,13 @@ class Tree:
         tree._root._depth = tree.get_depth() + 1
         tree._root._children.append(Multiply(parent=tree._root, children=[], mutating=True, gen=True))
         tree._root._depth = tree.get_depth() + 1
-        tree._root._children[0]._children.append(ArrayVariableFloatTerminal(tree._root._children[0], 1.0, 0))
-        tree._root._children[0]._children.append(ArrayVariableFloatTerminal(tree._root._children[0], 1.0, 0))
+        tree._root._children[0]._children.append(ArrayVariableFloat(tree._root._children[0], 1.0, 0))
+        tree._root._children[0]._children.append(ArrayVariableFloat(tree._root._children[0], 1.0, 0))
         tree._root._depth = tree.get_depth() + 1
         tree._root._children.append(Multiply(parent=tree._root, children=[], mutating=True, gen=True))
         tree._root._depth = tree.get_depth() + 1
-        tree._root._children[1]._children.append(ArrayVariableFloatTerminal(tree._root._children[1], 1.0, 1))
-        tree._root._children[1]._children.append(ArrayVariableFloatTerminal(tree._root._children[1], 1.0, 1))
+        tree._root._children[1]._children.append(ArrayVariableFloat(tree._root._children[1], 1.0, 1))
+        tree._root._children[1]._children.append(ArrayVariableFloat(tree._root._children[1], 1.0, 1))
         tree._root._depth = tree.get_depth() + 1
         return tree
 
@@ -473,7 +473,7 @@ class IntTerminal(Terminal):
         return self._value
 
 
-class ArrayVariableFloatTerminal(Terminal):
+class ArrayVariableFloat(Terminal):
     def __init__(self, parent, hard_value=None, index=None):
         Terminal.__init__(self, parent)
         self._individual = None

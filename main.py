@@ -13,7 +13,7 @@ class MultiVariableRegression:
         Class designed to contain the main definition of the problem to be solved by the GP
     """
     def __init__(self, dataset, population, generations, tournament_size, elitism,
-                 mutation_chance, cross_over_chance, vars):
+                 mutation_chance, cross_over_chance, vars, yacht, skewed):
 
         """
         @param dataset: list
@@ -41,9 +41,22 @@ class MultiVariableRegression:
         print 'Build initial population'
         # Circles and Ellipses can be expressed in forms like (x/a)^2 + (y/b)^2 = 1
         # The target fitness was set to 1
+        target_fitness = 1.0 
+        terminals = ['ArrayVariableFloat']
+        if yacht:
+            target_fitness = None
+            non_terminals = ['Add', 'Multiply', 'Pow2', 'Subtract', 'ProtectedDiv']            
+        else:
+            non_terminals = ['Add', 'Multiply', 'Pow2']
+
+        if skewed:
+            terminals += ['ArrayVariableSkewed']
+        
+            
+        
         pop_builder = PopulationHandler(pop_size=population, tournament_size=tournament_size, elitism=elitism,
                                         dataset=self._dataset, variables=vars, fitness=ft.MSEFitness(),
-                                        target_fitness=1.0)
+                                        target_fitness=target_fitness, non_terminals=non_terminals, terminals=terminals)
         best = 1
         tries = 0
         # while best >= 1:
@@ -65,21 +78,20 @@ class MultiVariableRegression:
 
 
 def usage():
-    print 'example: main.py -f dataset.txt -p 500 -g 500 -t 7 -m 0.39 -x 0.6 -e' \
+    print 'example: main.py -f dataset.txt -p 500 -g 500 -t 7 -m 0.39 -x 0.6 | -e | [-y|-s]' \
           '\n --dataset_file=dataset.txt --population=500 --generations=500  --tournament_size=7 ' \
-          ' --mutation=0.39 --cross_over=0.6 --elitism'
-
+          ' --mutation=0.39 --cross_over=0.6 --elitism | [--yacht|--skewed]'
 
 def main():
     dataset_file = ""
 
     try:
         arg_list = sys.argv[1:]
-        opts, args = getopt.getopt(arg_list, 'f:p:g:t:m:x:v:eh', ['dataset_file=', 'population=', 'mutation=',
+        opts, args = getopt.getopt(arg_list, 'f:p:g:t:m:x:v:eysh', ['dataset_file=', 'population=', 'mutation=',
                                                                 'cross_over=', 'generations=', 'tournament_size=',
-                                                                'vars=','elitism', 'help'])
+                                                                'vars=','elitism', 'yacht','skewed','help'])
     except getopt.GetoptError:
-        usage()
+        print 'okey'
         raise
     population = 500
     generations = 500
@@ -88,9 +100,12 @@ def main():
     tournament_size = 7
     vars = ['x', 'y']
     elitism = False
+    yacht=False
+    skewed = False
     for opt, arg in opts:
-        if opt == '-h':
+        if opt in ("-h", "--help"):
             usage()
+            exit(0)
         elif opt in ("-f", "--dataset_file"):
             dataset_file = arg
             print 'dataset_file=', arg
@@ -115,8 +130,16 @@ def main():
         elif opt in ("-e", "--elitism"):
             elitism = True
             print 'elitism=', elitism
+        elif opt in ("-y", "--yacht"):
+            yacht=True
+            vars = ['a', 'b', 'c', 'd', 'e', 'f']
+            print 'yacht=', yacht            
+            print 'vars=', vars      
+        elif opt in ("-s", "--skewed"):
+            skewed = True
+            print 'skewed=', skewed
 
-    MultiVariableRegression(dataset_file, population, generations, tournament_size, elitism, mutation, cross_over, vars)
+    MultiVariableRegression(dataset_file, population, generations, tournament_size, elitism, mutation, cross_over, vars, yacht, skewed)
 
 
 if __name__ == "__main__":

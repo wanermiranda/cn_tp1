@@ -26,8 +26,8 @@ class PopulationHandler:
 
     def __init__(self, min_depth=2, max_depth=7, pop_size=500, terminals_chance=0.5, non_terminals_chance=0.5,
                  tournament_size=5, elitism=False, fitness=None, dataset=None, target_fitness=1.0,
-                 non_terminals=['Add', 'Multiply', 'Pow2'], #, 'ArrayVariableSkewed''ArrayVariableFloatTerminal'
-                 terminals=['ArrayVariableSkewed', 'IntTerminal'], variables=['x', 'y']):
+                 non_terminals=['Add', 'Multiply', 'Pow2', 'Subtract'], #, 'ArrayVariableSkewed''ArrayVariableFloatTerminal'
+                 terminals=['ArrayVariableFloat' ], variables=['x', 'y']):
         self._min_depth = min_depth
         self._max_depth = max_depth
         self._pop_size = pop_size
